@@ -23,7 +23,7 @@ export const Navbar = () => {
             </button>
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
-            <Link to="/" class="text-sm font-semibold font-font1 leading-6  text-blue1">Qué es Smarty</Link>
+            <Link to="/" class="text-sm font-semibold font-font1 leading-6  text-blue1"> Qué es Smarty </Link>
   
             <Link to="#" class="text-sm font-semibold font-font1 leading-6 text-blue1"> Materias </Link>
   
