@@ -1,14 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "../Navbar";
 
 export default function Router() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
-        <Route path="/">
+        <Route>
           <Navbar/>
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
