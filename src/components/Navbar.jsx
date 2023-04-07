@@ -1,36 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Smarty from './Smarty';
+import Materias from './Materias';
+import Registrarse from './Registrarse';
+import IniciarSesion from './IniciarSesion';
 
 function Navbar() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-    </nav>
-  );
-}
-
-export default Navbar;
-
-
-
-{/*import { Link } from "react-router-dom";
-
-export const Navbar = () => {
-  return (
-    <div class="px-6 pt-6 lg:px-8">
+<div class="px-6 pt-6 lg:px-8">
       <nav class="flex items-center justify-between" aria-label="Global">
         <div class="flex lg:flex-1">
-          {/*Icono de home-}
           <Link to="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Smarty App</span>
             <img class="h-12" src="../src/images/smarty-home.png" alt="" />
@@ -42,7 +21,7 @@ export const Navbar = () => {
             type="button"
             class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
-            <span class="sr-only">menu</span>
+            <span class="sr-only">Menu</span>
             <svg
               class="h-6 w-6"
               fill="none"
@@ -80,7 +59,7 @@ export const Navbar = () => {
             to="#"
             class="text-sm font-semibold font-font1 leading-6 text-blue1"
           >
-            Registrate
+            Registrarse
           </Link>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -88,10 +67,13 @@ export const Navbar = () => {
             to="#"
             class="text-sm font-semibold font-font1 leading-6 text-blue1"
           >
-            Inicia Sesión<span aria-hidden="true"></span>
+            Iniciar Sesión<span aria-hidden="true"></span>
           </Link>
         </div>
       </nav>
     </div>
   );
-};*/}
+};
+
+export default Navbar;
+
