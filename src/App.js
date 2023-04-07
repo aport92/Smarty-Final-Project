@@ -1,21 +1,25 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Materias from './components/Materias';
-import Registrarse from './components/Registrarse';
-import IniciarSesion from './components/IniciarSesion';
+import './App.css';
+import {BrowserRouter, Navigate, Route, Routes} from 'react-router-dom';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import NotFound from './components/pages/Notfound';
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/materias" exact component={Materias} />
-        <Route path="/registrarse" exact component={Registrarse} />
-        <Route path="/iniciar-sesion" exact component={IniciarSesion} />
-      </Switch>
-    </Router>
+    <BrowserRouter>
+    
+    <Navbar></Navbar>
+
+      <Routes>
+        <Route path="/" element={ <Home></Home>}> </Route>
+        <Route path="/users" element={ <Users></Users>}> </Route>
+        <Route path="/about" element={ <AboutPage></About>}> </Route>
+        <Route path="/about" element={ <AboutPage></About>}> </Route>
+
+        <Route path="*" element={ <NotFound/>}> </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
