@@ -1,14 +1,39 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function Navbar() {
+  return (
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
+
+
+
+{/*import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <div class="px-6 pt-6 lg:px-8">
       <nav class="flex items-center justify-between" aria-label="Global">
         <div class="flex lg:flex-1">
-          {/*Icono de home-*/}
+          {/*Icono de home-}
           <Link to="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Smarty App</span>
-            <img class="h-12" src="img/smarty-home.png" alt="" />
+            <img class="h-12" src="../src/images/smarty-home.png" alt="" />
           </Link>
         </div>
 
@@ -69,4 +94,4 @@ export const Navbar = () => {
       </nav>
     </div>
   );
-};
+};*/}
