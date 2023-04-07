@@ -1,10 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.active{
-    color: red;
-    font-weight: bold;
-}
+tailwind.config {
+    theme: {
+      extend: {
+        fontFamily: {
+          font1: "../fonts/Insanibc.ttf";
+          font2: "Arial GEO";
+          font3: "Arial Narrow";
+        }
 
-.activeBlue{
-    color: blue;
-    font-weight: bold;
-}
+        colors {
+          darkblue: "#244673";
+          mainblue: "#1B62BF";
+          lblue1: "#328BD9";
+          lblue2: "50b4f2";
+          lblue3: "63caf2";
+          dgray: "515151";
+          lgray: "787878";
+          mgray: "9d9d9d";
+          lgray1: "c1c1c1";
+          lgray2: " dcdcdc";
+        }
+      };
+    };
+  }

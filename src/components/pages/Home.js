@@ -1,17 +1,14 @@
-
 import {React} from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
-function HomePages() {
 
- const userId = 'George';
+function Home() {
   return (
-      <div>
+    <div>
           <h1>Hello, Here HomePage</h1>
-          <Link to={`/users/${userId}`}>User</Link>
+          <Link to={``}></Link>
       </div>
-
   );
 }
 
-export default HomePages;
+export default Home;

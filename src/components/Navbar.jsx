@@ -3,24 +3,24 @@ import {React} from 'react';
 import {NavLink} from 'react-router-dom';
 import './Navbar.css';
 
-function NavBar() {
+function Navbar() {
   return (
       <div>
           <ul>
             <li>
-                <NavLink className={({isActive})=> (isActive ? 'active' : 'activeBlue') } to="./" >Inicio</NavLink>
+                <NavLink className={({isActive})=> (isActive ? 'active' : 'activeBlue') } to="/Home" >Inicio</NavLink>
             </li>
 
             <li>
-                <NavLink className={({isActive})=> (isActive ? 'active' : 'activeBlue') } to="./Smarty">Users</NavLink>
+                <NavLink className={({isActive})=> (isActive ? 'active' : 'activeBlue') } to="/Smarty">Qué Es Smarty</NavLink>
             </li>
-           
+
             <li>
-                <NavLink className={({isActive})=> (isActive ? 'active' : 'activeBlue') } to="./about">About</NavLink>
+                <NavLink className={({isActive})=> (isActive ? 'active' : 'activeBlue') } to="/Matrerias">Materias</NavLink>
             </li>
           </ul>
       </div>
   );
 }
 
-export default NavBar;
+export default Navbar;
