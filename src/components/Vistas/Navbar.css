@@ -24,11 +24,6 @@ nav ul{
     gap: 2rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: #1B62BF;
-}
-
 nav #toggle,
 nav label {
     display: none;

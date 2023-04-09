@@ -6,9 +6,10 @@ export const Navbar = () => {
   return(
     <div className="wrapper">
       <nav>
-          <div className="flex-shrink-0 flex items-center">
-              <img className=" lg:block h-8 w-auto" src={logo} alt="Smarty logo" />
-              <input type="checkbox" name="" id="toogle"></input>
+        <div className='logo'>
+        <img className=" lg:block h-8 w-auto" src={logo} alt="Smarty logo" />
+        </div>
+              <input type="checkbox" name="" id="toggle"></input>
                 <label for="toggle"><i className='material-icons'>Menu</i></label>
                   <div className='menu'>
                     <ul>
@@ -17,7 +18,6 @@ export const Navbar = () => {
                       <li><Link to="/Materias">Materias</Link></li>
                       <li><Link to="/InicioSesion">Inicia Sesión</Link></li>
                     </ul>
-                  </div>
             </div>
       </nav>
     </div>
