@@ -7,7 +7,8 @@ export const Navbar = () => {
     <div className="wrapper">
       <nav>
           <div className="flex-shrink-0 flex items-center">
-              <img className="hidden lg:block h-8 w-auto" src={logo} alt="Smarty logo" />
+              <img className=" lg:block h-8 w-auto" src={logo} alt="Smarty logo" />
+              <input type="checkbox" name="" id="toogle"></input>
                 <label for="toggle"><i className='material-icons'>Menu</i></label>
                   <div className='menu'>
                     <ul>

@@ -34,7 +34,7 @@ nav label {
     display: none;
 }
 
-@media (max-width:40.625em){
+@media (max-width: 40.625em){
     nav .menu{
         width: 100%;
         height: 0;
