@@ -8,7 +8,7 @@ export const Navbar = () => {
     <div className="wrapper">
       <nav>
         <div className='logo'>
-        <img className=" lg:block h-8 w-auto" src={logo} alt="Smarty logo" />
+        <img className="lg:block h-8 w-auto" src={logo} alt="Smarty logo" />
         </div>
               <input type="checkbox" name="" id="toggle"></input>
                 <label for="toggle">
