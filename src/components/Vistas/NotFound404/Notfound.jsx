@@ -1,11 +1,10 @@
 import {React} from 'react';
-
+import {Error404} from '../NotFound404/404 Error.svg';
 
 const NotFound = () => {
   return (
       <div>
-          404
-          Not Found
+        <img src={'Error404'} alt='svg'/>
       </div>
   );
 }
