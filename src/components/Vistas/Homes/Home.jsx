@@ -1,34 +1,67 @@
 import { React } from "react";
 import { Navbar } from "../Navbar";
 import Footer from "../Footer";
-
+import { Link } from "react-router-dom";
+import imgHome from "../../images/imgHome.gif";
 
 const Home = () => {
   return (
-  <div>
-       <Navbar />
-      <section className="text-gray-600 body-font">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-      <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-       <img src={''} alt="gif" width=""/>
-      </div>
+    <div>
+      <Navbar />
+          <main>
+            <section className="text-gray-600 body-font">
+              <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                  <img alt="" src={imgHome} width=""/>
+                  </div>
+                  <section className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                    <h1 className="font-font1 sm:text-4xl text-3xl mb-4 font-medium text-mainblue"> ¡Aprender Siempre es genial!</h1>
+                      <Link>
+                        <span className="bg-blue-100 font-font2 text-blue-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                          <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
+                            <path d="M20 6L9 17l-5-5"></path>
+                          </svg>
+                        </span>Amplía tu conocimiento
+                      </Link>
+                        <Link>
+                          <span className="bg-blue-100 font-font2 text-blue-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                            <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
+                              <path d="M20 6L9 17l-5-5"></path>
+                            </svg>
+                          </span>Mejora tu memoria
+                        </Link>
+                          <Link>
+                              <span className="bg-blue-100 font-font2 text-blue-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                  </svg>
+                              </span>Aumenta tu confianza
+                          </Link>
+                              <Link>
+                                  <span className="bg-blue-100 font-font2 text-blue-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
+                                      <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                  </span>Te mantiene relevante
+                              </Link>
+                                  <Link>
+                                      <span className="bg-blue-100 font-font2 text-blue-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                        <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" className="w-3 h-3" viewBox="0 0 24 24">
+                                          <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                      </span>Te brinda oportunidades
+                                  </Link>
 
-      <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-           <br className="hidden lg:inline-block" />readymade gluten
-          </h1>
-         <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.
-         </p>
-
-        <div className="flex justify-center">
-          <button className="inline-flex text-white bg-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-pink-600 rounded text-lg">Button</button>
-          <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
-        </div>
-     </div>
-    </div>
-     </section>
-         <Footer />
-</div>
+                                      <div className="mt-3  p-2 flex justify-center gap-x-6">
+                                          <Link to="/" className="rounded-md bg-lblue1 px-10 py-2.5 text-xl font-font2 text-white shadow-sm hover:bg-mainblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Registrate</Link>
+                                            <Link to="/" className="rounded-md bg-lblue1 px-6 py-2.5 text-xl font-font2 text-white shadow-sm hover:bg-mainblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Iniciar sesión</Link>
+                                      </div>
+                      </section>
+                </div>
+          </section>
+        </main>
+  <Footer />
+  </div>
   );
 };
 export default Home;
