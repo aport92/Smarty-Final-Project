@@ -4,15 +4,13 @@ import { Navbar } from '../Navbar';
 import Footer from '../Footer';
 
 
-function Home() {
+const Home = () => {
   return (
     <div>
-        <Navbar></Navbar>
+        <Navbar/>
           <h1>Hello, Here HomePage</h1>
-          <Link to={``}></Link>
-        <Footer></Footer>
+        <Footer/>
       </div>
   );
 }
-
 export default Home;
