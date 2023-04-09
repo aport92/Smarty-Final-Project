@@ -53,8 +53,8 @@ const Home = () => {
                                   </Link>
 
                                       <div className="mt-3  p-2 flex justify-center gap-x-6">
-                                          <Link to="/" className="rounded-md bg-lblue1 px-10 py-2.5 text-xl font-font2 text-white shadow-sm hover:bg-mainblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Registrate</Link>
-                                            <Link to="/" className="rounded-md bg-lblue1 px-6 py-2.5 text-xl font-font2 text-white shadow-sm hover:bg-mainblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Iniciar sesión</Link>
+                                          <Link to="/" className="rounded-md bg-blue-600 px-10 py-2.5 text-xl font-font2 text-white shadow-sm hover:bg-mainblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Registrate</Link>
+                                            <Link to="/" className="rounded-md bg-blue-600 px-6 py-2.5 text-xl font-font2 text-white shadow-sm hover:bg-mainblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Iniciar sesión</Link>
                                       </div>
                       </section>
                 </div>
