@@ -1,11 +1,17 @@
 import {React} from 'react';
+import Footer from '../Footer';
+import { Navbar } from '../Navbar';
 
 
 const Materias = () => {
   return (
-      <div>
 
+      <div>
+        <Navbar/>
+        
+        <Footer/>
       </div>
+
   );
 }
 
