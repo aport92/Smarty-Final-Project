@@ -1,14 +1,12 @@
-import { Router, Routes, Route } from "react-router-dom";
-import { Navbar } from "../Navbar";
+import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../Vistas/Homes/Home";
 
 export default function () {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-
-<Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
