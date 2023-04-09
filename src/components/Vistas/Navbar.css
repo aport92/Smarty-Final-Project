@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Insanibc';
+    src: local('Insanibc'), url(../fonts/Insanibc.ttf) format('truetype');
+}
+
 .wrapper {
     width: 100%;
     max-width: 1000px;
@@ -12,6 +17,8 @@ nav {
     align-items: center;
     background-color: white;
     border-radius: 0.4rem;
+    font-family: 'Insanibc';
+    color: #1B62BF;
 }
 
 nav .logo {

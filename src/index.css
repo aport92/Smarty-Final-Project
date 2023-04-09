@@ -1,10 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  src: local('Insanibc'), url(../src/components/fonts/Insanibc.ttf) format('truetype');
+  src: local('arial-narrow'), url(../src/components/fonts/arial-narrow.ttf) format('truetype');
+  src: local('arial-narrow-bold'), url(../src/components/fonts/arial-narrow-bold.ttf) format('truetype');
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Insanibc',
+      'arial-narrow','arial-narrow-bold',
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
