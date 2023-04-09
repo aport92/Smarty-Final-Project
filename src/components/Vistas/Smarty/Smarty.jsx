@@ -1,14 +1,13 @@
-
 import {React} from 'react';
 import { Navbar } from '../Navbar';
 import Footer from '../Footer';
 
-function Smarty() {
+const Smarty = () => {
   return (
     <div>
-      <Navbar></Navbar>
-    <h1>Hello Im AboutPage</h1>
-    <Footer></Footer>
+      <Navbar />
+       <h1>Hello Im AboutPage</h1>
+      <Footer />
     </div>
   );
 }
