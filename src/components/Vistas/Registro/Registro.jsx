@@ -61,11 +61,11 @@ const Registro = () => {
       <br />
       <button id="submitButton" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-md mb-4">Enviar</button>
   </div>
+  </div>
 </form>
 </div>
 <Footer/>
-</div>
-);
+</div> );
 }
 
 export default Registro;
