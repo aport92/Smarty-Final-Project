@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
 import {Typing} from '../InicioSesion/Typing.gif'
+
 const Registro = () => {
     return(
 
-<div>
+<>
     <Navbar />
         <div className="bg-white rounded-md p-4 flex flex-col md:flex-row items-center">
                     <div className="ml-auto md:mr-4 mb-4 md:mb-0 rounded-md p-2"><img src={Typing} alt="Inicio Sesion" /></div>
 
                 <div className="w-full mx-auto max-w-md">
-                    <form className="bg-white p-6 rounded-lg shadow-md">
+                    <form className="bg-white p-6 rounded-lg shadow-md" />
                         <h2 className="text-xl font-font1 text-mainblue mb-4 tracking-wide">Iniciar sesión</h2>
 
                             <div className="grid grid-cols-2 gap-4 flex-col">
@@ -62,10 +63,11 @@ const Registro = () => {
       <button id="submitButton" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-md mb-4">Enviar</button>
   </div>
   </div>
-</form>
-</div>
+<form/>
+
 <Footer/>
-</div> );
-}
+</>
+ );
+};
 
 export default Registro;
