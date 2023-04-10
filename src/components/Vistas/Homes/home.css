@@ -1,0 +1,22 @@
+@font-face {
+    src: local('arial-narrow'), url(/src/components/fonts/arial-narrow.ttf) format('truetype');
+    src: local('Insanibc'), url(/src/components/fonts/Insanibc.ttf) format('truetype');
+}
+
+section
+h1 {
+    font-family:'Insanibc';
+}
+
+div
+span{
+    font-family: 'arial';
+}
+
+section
+div
+#link{
+    font-family: 'Insanibc';
+    font-size: medium;
+
+}
