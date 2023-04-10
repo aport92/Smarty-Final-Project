@@ -1,0 +1,10 @@
+@font-face {
+    src: local('arial-narrow'), url(/src/components/fonts/arial-narrow.ttf) format('truetype');
+    src: local('Insanibc'), url(/src/components/fonts/Insanibc.ttf) format('truetype');
+}
+
+div
+h1{
+    font-family: 'Insanibc';
+    color: #1B62BF;
+}
