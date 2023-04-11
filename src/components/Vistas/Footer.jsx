@@ -6,7 +6,7 @@ function Footer() {
 
     //{/*TODO JS */}
 
-   return (
+return (
 <div>
 <footer className="text-blue-600 body-font">
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
