@@ -1,6 +1,6 @@
 import {React} from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../../images/smarty-home.png";
+import logo from "../../images/smarty-favicon.png";
 import './footer.css';
 function Footer() {
 
