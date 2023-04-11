@@ -1,7 +1,7 @@
 import {React} from 'react';
+import { Navbar } from '../Navbar';
 import Footer from '../Footer';
-import Navbar from '../Navbar';
-import {Typing} from '../InicioSesion/Typing.gif'
+import Typing from '../InicioSesion/Typing.gif'
 
 const Registro = () => {
     return(
@@ -9,7 +9,8 @@ const Registro = () => {
 <>
     <Navbar />
         <div className="bg-white rounded-md p-4 flex flex-col md:flex-row items-center">
-                    <div className="ml-auto md:mr-4 mb-4 md:mb-0 rounded-md p-2"><img src={Typing} alt="Inicio Sesion" /></div>
+                    <div className="ml-auto md:mr-4 mb-4 md:mb-0 rounded-md p-2">
+                      <img src={Typing} alt="Inicio Sesion"/></div>
 
                 <div className="w-full mx-auto max-w-md">
                     <form className="bg-white p-6 rounded-lg shadow-md" />
@@ -63,10 +64,9 @@ const Registro = () => {
   </div>
   </div>
 <form/>
-
 <Footer/>
 </>
- );
+);
 };
 
 export default Registro;

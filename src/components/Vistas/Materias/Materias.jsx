@@ -1,13 +1,13 @@
 import {React} from 'react';
-import {Footer} from '../Footer';
 import { Navbar } from '../Navbar';
+import Footer from '../Footer';
 import './materias.css';
 
 const Materias = () => {
   return (
     <>
+<Navbar/>
       <div>
-        <Navbar/>
         <div ClassName="start_btn"><button>Iniciar Quiz</button></div>
 
     {/* Indicaciones de quiz */}
@@ -66,8 +66,8 @@ const Materias = () => {
             <button ClassName="quit">Salir </button>
         </div>
     </div>
-        <Footer/>
       </div>
+<Footer/>
       </>
   );
 }
