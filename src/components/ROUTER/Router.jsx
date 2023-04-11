@@ -5,6 +5,7 @@ import NotFound from "../Vistas/NotFound404/Notfound";
 import Materia from "../Vistas/Materias/Materias";
 import InicioSesion from "../Vistas/InicioSesion/InicioSesion";
 import Registro from "../Vistas/Registro/Registro";
+import ForgotPass from "../Vistas/forgot-password/ForgotPass";
 
 export default function () {
   return (
@@ -15,6 +16,7 @@ export default function () {
         <Route path="/Materias" element={<Materia />} />
         <Route path="/InicioSesion" element={<InicioSesion />}/>
         <Route path="/Registro" element={<Registro />}/>
+        <Route path="/ForgotPass" element={<ForgotPass />}/>
 
         <Route path="*" element={<NotFound />} />
       </Routes>
