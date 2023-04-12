@@ -8,7 +8,7 @@ const Registro = () => {
 
 <>
     <Navbar />
-        <div className="bg-white rounded-md p-4 flex flex-col md:flex-row items-center">
+        <div className="bg-gray-50 rounded-md p-4 flex flex-col md:flex-row items-center">
                     <div className="ml-auto md:mr-4 mb-4 md:mb-0 rounded-md p-2">
                       <img src={Typing} alt="Inicio Sesion"/></div>
 
@@ -54,10 +54,9 @@ const Registro = () => {
         <label className="block" for="genero">Género:</label>
          <select className="border-darkblue rounded-lg px-3 py-2 w-full font-font3" id="genero" name="genero" required>
           <option value="" disabled selected>Género</option>
-          <option value="mujer">Mujer</option>
-          <option value="hombre">Hombre</option>
-          <option value="no-binario">No binario</option>
-          <option value="otro">Otro</option>
+          <option value="mujer">Femenino</option>
+          <option value="hombre">Masculino</option>
+          <option value="hombre">Otro</option>
         </select></div>
       <br />
       <button id="submitButton" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-md mb-4">Enviar</button>
