@@ -1,6 +1,7 @@
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../Vistas/Homes/Home";
 import Smarty from "../Vistas/Smarty/Smarty";
+import Materias from "../Vistas/Materias/Materias";
 import NotFound from "../Vistas/NotFound404/Notfound";
 import InicioSesion from "../Vistas/InicioSesion/InicioSesion";
 import Registro from "../Vistas/Registro/Registro";
@@ -12,6 +13,7 @@ export default function () {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Smarty" element={<Smarty />} />
+        <Route path="/Materias" element={<Materias />} />
         <Route path="/InicioSesion" element={<InicioSesion />}/>
         <Route path="/Registro" element={<Registro />}/>
         <Route path="/ForgotPass" element={<ForgotPass />}/>
