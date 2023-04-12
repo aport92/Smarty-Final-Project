@@ -29,10 +29,10 @@ const InicioSesion = () => {
                   placeholder="**********" type="password" /></label>
 
               <Link className="block w-full px-4 py-2 mt-4 text-sm font-font2 leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg- hover:bg-blue-800 focus:outline-none focus:shadow-outline-"
-                to="">Inicia Sesión</Link>
+                to={"/"}>Inicia Sesión</Link>
 
               <p className="mt-4">
-                <Link className="block mb-2 hover:underline" to="">
+                <Link className="block mb-2 hover:underline" to={""}>
                   Olvidaste tu contraseña?</Link></p>
 
               <p className="mt-1">
