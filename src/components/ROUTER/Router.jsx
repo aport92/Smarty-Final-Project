@@ -1,11 +1,14 @@
 import {BrowserRouter, Routes, Route } from "react-router-dom";
+//Vistas Estudiante//
 import Home from "../Vistas/Homes/Home";
 import Smarty from "../Vistas/Smarty/Smarty";
 import Materias from "../Vistas/Materias/Materias";
-import NotFound from "../Vistas/NotFound404/Notfound";
 import InicioSesion from "../Vistas/InicioSesion/InicioSesion";
 import Registro from "../Vistas/Registro/Registro";
 import ForgotPass from "../Vistas/forgot-password/ForgotPass";
+import NotFound from "../Vistas/NotFound404/Notfound";
+
+//Vistas Admin//
 
 export default function () {
   return (
