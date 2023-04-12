@@ -23,7 +23,7 @@ const Smarty = () => {
               <p className="mb-8 leading-relaxed text-gray-600">¡No pierdas la oportunidad de convertirte en un experto en ciencias con <strong className='font-bold text-blue-500'>Smarty</strong>!</p>
 
                 <div className="flex justify-center">
-                  <Link to="/" ID="Button" className="rounded-md bg-blue-600 px-6 py-2.5 text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Vamos allá</Link>
+                  <Link to="/Registro" ID="Button" className="rounded-md bg-blue-600 px-6 py-2.5 text-white shadow-sm hover:bg-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Vamos allá</Link>
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                     </svg>
                 </div>

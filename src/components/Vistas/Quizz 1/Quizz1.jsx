@@ -1,9 +1,9 @@
 import {React} from 'react';
 import { Navbar } from '../Navbar';
 import Footer from '../Footer';
-import './materias.css';
+import './Quizz1.css';
 
-const Materias = () => {
+const Quizz1 = () => {
   return (
     <>
 <Navbar/>
@@ -72,4 +72,4 @@ const Materias = () => {
   );
 }
 
-export default Materias;
+export default Quizz1;

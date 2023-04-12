@@ -16,7 +16,7 @@ const InicioSesion = () => {
           </div>
           <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div className="w-full">
-              <h1 className="block mb-2 text-xl font-font1 text-mainblue">Inicio de Sesión</h1>
+              <h1 className="block mb-2 text-xl font-font1 text-blue-500">Inicio de Sesión</h1>
 
               <label className="block mb-2">
                 <span className="text-gray-700 dark:text-gray-400">Correo electrónico:</span>
@@ -29,16 +29,15 @@ const InicioSesion = () => {
                   placeholder="**********" type="password" /></label>
 
               <Link className="block w-full px-4 py-2 mt-4 text-sm font-font2 leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg- hover:bg-blue-800 focus:outline-none focus:shadow-outline-"
-                to={"/"}>Inicia Sesión</Link>
+                to={"/PanelEstudiante"}>Inicia Sesión</Link>
 
               <p className="mt-4">
-                <Link className="block mb-2 hover:underline" to={""}>
+                <Link className="block mb-2 hover:underline" to={"/ForgotPass"}>
                   Olvidaste tu contraseña?</Link></p>
 
-              <p className="mt-1">
-                <a className="block mb-2 font-font3 text-mainblue hover:underline"
-                  to="">Regístrate</a>
-              </p>
+                  <p className="mt-1">
+                <Link className="block mb-2 hover:underline" to={"/Registro"}>
+                  Regístrate</Link></p>
             </div>
           </div>
         </div>

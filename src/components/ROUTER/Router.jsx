@@ -2,7 +2,7 @@ import {BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../Vistas/Homes/Home";
 import Smarty from "../Vistas/Smarty/Smarty";
 import NotFound from "../Vistas/NotFound404/Notfound";
-import Materia from "../Vistas/Materias/Materias";
+import Materia from "../Vistas/Quizz 1/Quizz1";
 import InicioSesion from "../Vistas/InicioSesion/InicioSesion";
 import Registro from "../Vistas/Registro/Registro";
 import ForgotPass from "../Vistas/forgot-password/ForgotPass";
