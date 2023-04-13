@@ -9,7 +9,8 @@ const Materias = () => {
     return (
 <>
 <Navbar/>
-<div className="container">
+<section className="text-gray-400 body-font">
+    <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div className="card">
       <div className="face face1">
         <div className="content">
@@ -62,6 +63,7 @@ const Materias = () => {
       </div>
     </div>
   </div>
+  </section>
 <Footer/>
 </>
     );

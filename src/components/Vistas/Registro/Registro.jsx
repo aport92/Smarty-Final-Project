@@ -1,14 +1,15 @@
 import {React} from 'react';
 import { Navbar } from '../Navbar';
 import Footer from '../Footer';
-import Typing from '../InicioSesion/Typing.gif'
+import Typing from '../Registro/Typing.gif'
 
 const Registro = () => {
     return(
 
 <>
     <Navbar />
-        <div className="bg-gray-50 rounded-md p-4 flex flex-col md:flex-row items-center">
+    <section className="text-gray-400 body-font">
+    <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                     <div className="ml-auto md:mr-4 mb-4 md:mb-0 rounded-md p-2">
                       <img src={Typing} alt="Inicio Sesion"/></div>
 
@@ -62,6 +63,7 @@ const Registro = () => {
       <button id="submitButton" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-md mb-4">Enviar</button>
   </div>
   </div>
+  </section>
 <form/>
 <Footer/>
 </>
