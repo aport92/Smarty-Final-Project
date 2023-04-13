@@ -14,7 +14,7 @@ const Materias = () => {
       <div className="face face1">
         <div className="content">
           <div className="icon">
-          <img src={Math} alt="Not Found" />
+          <img src={Math} className='w-1/3 h-1/2 align-center ' alt="Not Found" />
           </div>
         </div>
       </div>
@@ -38,7 +38,7 @@ const Materias = () => {
       <div className="face face2">
         <div className="content">
           <h3>
-            <Link to={""} target="_blank"></Link>
+            <Link to={"/Quizz2"} target="_blank"></Link>
           </h3>
           <p>This is where I read news and network with different social groups.</p>
         </div>
@@ -55,7 +55,7 @@ const Materias = () => {
       <div className="face face2">
         <div className="content">
           <h3>
-            <Link to={"https://github.com/atom888"} target="_blank">atom888</Link>
+            <Link to={"/"} target="_blank">atom888</Link>
           </h3>
           <p>This is where I share code and work on projects.</p>
         </div>
