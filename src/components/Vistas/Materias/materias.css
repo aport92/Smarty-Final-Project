@@ -26,14 +26,6 @@ body {
     background: #1b6bd3;
 }
 
-.container .card:nth-child(2) .icon {
-    background: #1B62BF;
-}
-
-.container .card:nth-child(3) .icon {
-    background: #1b6bd3;
-}
-
 
 .container .card .icon .fa {
     position: absolute;
@@ -45,7 +37,7 @@ body {
     color: #fff;
 }
 
-i {
+Link {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -121,7 +113,7 @@ i {
     color: #244673;
 }
 
-.container a {
+.container link {
     text-decoration: none;
     color: #244673;
 }

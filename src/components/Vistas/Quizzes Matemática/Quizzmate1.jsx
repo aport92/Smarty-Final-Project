@@ -1,9 +1,9 @@
 import {React} from 'react';
 import { Navbar } from '../Navbar';
 import Footer from '../Footer';
-import './Quizz1.css';
+import './Quizzmate1.css';
 
-const Quizz1 = () => {
+const Quizzmate1 = () => {
   return (
     <>
 <Navbar/>
@@ -72,4 +72,4 @@ const Quizz1 = () => {
   );
 }
 
-export default Quizz1;
+export default Quizzmate1;

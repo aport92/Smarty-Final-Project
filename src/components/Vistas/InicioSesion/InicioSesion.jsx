@@ -2,7 +2,8 @@ import {React} from 'react';
 import { Navbar } from '../Navbar';
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
-import Aunthentication from '../InicioSesion/Authentication.gif'
+import Aunthentication from '../InicioSesion/Authentication.gif';
+import '../InicioSesion/iniciosesion.css';
 
 const InicioSesion = () => {
   return (
@@ -45,6 +46,7 @@ const InicioSesion = () => {
     </div>
   <Footer/>
   </>
+
   );
 }
 
