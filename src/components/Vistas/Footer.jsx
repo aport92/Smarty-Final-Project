@@ -7,11 +7,11 @@ function Footer() {
     //{/*TODO JS */}
 
 return (
-<div>
+<>
 <footer className="text-blue-600 body-font">
   <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <Link className="flex title-font font-medium items-center md:justify-start justify-center text-blue-800">
-    <img className="hidden lg:block h-8 w-auto" src={logo} alt="Smarty logo" />
+    <img className="hidden lg:block h-8 w-auto" to={"/Smarty"} src={logo} alt="Smarty logo" />
     </Link>
     <p className=" sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-blue-200 sm:py-2 sm:mt-0 mt-4">© 2023 Smarty
     </p>
@@ -31,7 +31,7 @@ return (
       </span>
   </div>
 </footer>
-</div>
+</>
 )
 };
 
