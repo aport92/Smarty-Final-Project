@@ -10,61 +10,50 @@ const Materias = () => {
     return (
 <>
 <Navbar/>
-<div className="container">
-    <div className="card">
-      <div className="face face1">
-        <div className="content">
-          <div className="icon">
-          <img src={Math} className='w-1/3 h-1/2 align-center ' alt="Not Found" />
-          </div>
-        </div>
-      </div>
-      <div className="face face2">
-        <div className="content">
-          <h3>
-            <Link to={"/Quizzes1"} target="_blank">Matemáticas</Link>
-          </h3>
-          <p>This is where I network and build my professional protfolio.</p>
-        </div>
-      </div>
-    </div>
-    <div className="card">
-      <div className="face face1">
-        <div className="content">
-          <div className="icon">
-          <img src={Science} className='w-1/3 h-1/2 align-center ' alt="Not Found" />
-          </div>
-        </div>
-      </div>
-      <div className="face face2">
-        <div className="content">
-          <h3>
-            <Link to={"/Quizzes2"} target="_blank"></Link>
-          </h3>
-          <p>This is where I read news and network with different social groups.</p>
-        </div>
-      </div>
-    </div>
-    <div className="card">
-      <div className="face face1">
-        <div className="content">
-          <div className="icon">
-            <i className="fa fa-github-square" aria-hidden="true"></i>
-          </div>
-        </div>
-      </div>
-      <div className="face face2">
-        <div className="content">
-          <h3>
-            <Link to={"/Quizzes3"} target="_blank">atom888</Link>
-          </h3>
-          <p>This is where I share code and work on projects.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-<Footer/>
-</>
+<div class="container">
+                <div class="col">
+                    <span class="active">
+                        <div class="box">
+                            <i class="fa fa-gift" aria-hidden="true"></i>
+                            <h2>Lorem Ipsum</h2>
+                            <a href="#">Read More</a>
+                        </div>
+                    </span>
+                    <span><img src="https://venture-lab.org/wp-content/uploads/2019/11/writing.jpg"></span>
+                </div>
+                <div class="col">
+                    <span><img src="https://i1.wp.com/learnenglishfunway.com/wp-content/uploads/2020/04/expert-tips-for-writing-job-posts.jpg?resize=810%2C500&ssl=1"></span>
+                    <span class="active">
+                        <div class="box">
+                            <i class="fa fa-glass" aria-hidden="true"></i>
+                            <h2>Lorem Ipsum</h2>
+                            <a href="#">Read More</a>
+                        </div>
+                </div>
+                <div class="col">
+                    <span class="active">
+                        <div class="box">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                            <h2>Lorem Ipsum</h2>
+                            <a href="#">Read More</a>
+                        </div>
+                    </span>
+                    <span><img src="https://global-exam.com/blog/wp-content/uploads/2018/10/writing-ex1-e1553097551973.jpeg"></span>
+                </div>
+                <div class="col">
+                    <span><img src="https://149349728.v2.pressablecdn.com/wp-content/uploads/2021/03/marcos-paulo-prado-tcyW6Im5Uug-unsplash-scaled-e1615501484783.jpg"></span>
+                    <span class="active">
+                        <div class="box">
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            <h2>Lorem Ipsum</h2>
+                            <a href="#">Read More</a>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <F
+            ooter/>
+            </>
     );
 }
 
