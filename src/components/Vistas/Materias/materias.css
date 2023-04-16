@@ -95,20 +95,75 @@ width: 100%;  height: 100%;
     top: 0;
 }
 } 
+/***************** span ******************/
+.container .col span{
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;   height: 50%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;  align-items: center;
+    transition: .9s;
+    z-index: 1;
+}
+.container .col span:nth-child(1){
+    top: 0;
+}
+.container .col span:nth-child(2){
+    top: 50%;
+}
+.container .col span.active{
+     z-index: 2;
+}
+.container .col span .fa{
+    font-size: 60px;
+}
+.container .col span h2{
+    font-size: 20px;
+}
+.container .col span a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    background: #fff;   color: #262626;
+    border-radius: 20px;
+    margin-top: 10px;
+    transform: scale(0);
+    transition: .5s;
+}
+.container .col:hover span a{
+    transform: scale(1);
+}
+.container .col:hover span a:hover{
+    background: #00bcd4;   color: #fff;
+}
+.container .col span img{
+    width: 100%;  height: 100%;
+}
+
+@media screen and (max-width: 850px) { 
+   .container{
+      height: 200px;  width: 100%;
+   }
+   .container .col span{
+       height: 100%;
+   }
+    .container .col span:nth-child(2){
+        top: 0;
+    }
+} 
 
 @media screen and (max-width: 600px) { 
-    .materias .container{
-   height: calc(200px * 4);  width: 100%;
-   display: block;
+    .container{
+       height: calc(200px * 4);  width: 100%;
+       display: block;
+    }
+    .container .col{
+        height: 200px;  width: 100%;
+    }
+    .container .col span{
+        height: 100%;  width: 100%;
+    }
 }
-.materias .container .col{
-    height: 200px;  width: 100%;
-}
-.materias .container .col span{
-    height: 100%;  width: 100%;
-}
-
-    background: #1B62BF;
-    transition: 0.7s;
-    z-index: 1;
-  }
