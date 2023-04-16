@@ -12,6 +12,7 @@ const Materias = () => {
     <>
       <Navbar />
       <div className="materias container">
+        
         <div className="col">
           <span className="active">
             <div className="box">
