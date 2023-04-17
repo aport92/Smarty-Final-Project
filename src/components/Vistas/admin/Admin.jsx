@@ -36,7 +36,7 @@ return (
 <>
     <div className="container">
         <div className="navegacion">
-            <br>
+            <br/>
             <div className="logo">
                             <img src={"img/smarty-w3.svg"} />
                         </div>
@@ -64,7 +64,7 @@ return (
 
                 <li>
                     <Link to={"#"}>
-                        <span className="icon"><ion-icon name="document-attach-sharp"></ion-icon></ion-icon>
+                        <span className="icon"><ion-icon name="document-attach-sharp"></ion-icon>
                         </span>
                         <span className="title">Quizzes</span>
                     </Link>
@@ -96,7 +96,7 @@ return (
                 {/*Icono lupa buscador*/}
                 <div className="search">
                     <label>
-                        <input type="text" placerholder="Buscar">
+                        <input type="text" placerholder="Buscar"/>
                         <ion-icon name="search-outline">Buscar</ion-icon>
                     </label>
                 </div>
