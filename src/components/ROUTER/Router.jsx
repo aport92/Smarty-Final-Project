@@ -1,29 +1,36 @@
-import {BrowserRouter, Routes, Route } from "react-router-dom";
-//Vistas Estudiante//
+//Vista General//
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../Vistas/Homes/Home";
 import Smarty from "../Vistas/Smarty/Smarty";
-import Materias from "../Vistas/Materias/Materias";
 import InicioSesion from "../Vistas/InicioSesion/InicioSesion";
 import Registro from "../Vistas/Registro/Registro";
 import ForgotPass from "../Vistas/forgot-password/ForgotPass";
 import NotFound from "../Vistas/NotFound404/Notfound";
 
-//Vistas Admin//
+//Vista Estudiante//
+import Materias from "../Vistas/Materias/Materias";
+
+//Vista Admin//
+import Admin from "../Vistas/admin/Admin";
 
 export default function () {
   return (
     <BrowserRouter>
       <Routes>
+        {/*general*/}
         <Route path="/" element={<Home />} />
         <Route path="/Smarty" element={<Smarty />} />
-        <Route path="/Materias" element={<Materias />} />
-        <Route path="/InicioSesion" element={<InicioSesion />}/>
-        <Route path="/Registro" element={<Registro />}/>
-        <Route path="/ForgotPass" element={<ForgotPass />}/>
-
+        <Route path="/InicioSesion" element={<InicioSesion />} />
+        <Route path="/Registro" element={<Registro />} />
+        <Route path="/ForgotPass" element={<ForgotPass />} />
         <Route path="*" element={<NotFound />} />
+
+        {/*Estudiante*/}
+        <Route path="/Materias" element={<Materias />} />
+
+        {/*Admin*/}
+        <Route path="/Admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );
 }
-

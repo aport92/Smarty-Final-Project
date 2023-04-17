@@ -1,8 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../admin/admin.css';
 
 const Admin = () => {
-    return (
+
+     //MenuToggle
+        let toggle = document.querySelector('.toggle');
+        let navegacion = document.querySelector('.navegacion');
+        let main = document.querySelector('.main');
+
+        toggle.onclick = function () {
+            navegacion.classList.toggle('active')
+            main.classList.toggle('active');
+
+        }
+
+
+        toggle.onclick = function () {
+            navegacion.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+
+        let list = document.querySelectorAll('.navegacion li ');
+        function activeLink() {
+            list.forEach((item) =>
+                item.classList.remove('hovered'));
+            this.classList.add('hovered')
+        }
+        list.forEach((item) =>
+            item.addEventListener('mouseover', activeLink));
+
+
+return (
 
 <>
     <div className="container">
