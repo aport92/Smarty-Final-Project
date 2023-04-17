@@ -1,4 +1,3 @@
-
 import { React, useState } from "react";
 import { Navbar } from "../Navbar";
 import Footer from "../Footer";
@@ -76,7 +75,7 @@ const InicioSesion = () => {
       //ALERT TO NAVIGATE
       const Toast = Swal.mixin({
         toast: true,
-        position: "top-end",
+        position: "center",
         showConfirmButton: false,
         timer: 2000,
         timerProgressBar: true,
@@ -203,7 +202,7 @@ const InicioSesion = () => {
   };
 
   console.log(formulario);
-  
+
   return (
     <>
       <Navbar />
@@ -213,66 +212,72 @@ const InicioSesion = () => {
             <div className="h-32 md:h-auto md:w-1/2">
               <img
                 src={Aunthentication}
-                alt=""className="object-cover h-full w-full"
+                alt=""
+                className="object-cover h-full w-full"
               />
             </div>
-            <form onSubmit={handleLoginSession} className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+            <form
+              onSubmit={handleLoginSession}
+              className="flex items-center justify-center p-6 sm:p-12 md:w-1/2"
+            >
               <div className="w-full">
                 <h1 className="block mb-2 text-xl font-font1 text-blue-500">
                   Inicio de Sesión
                 </h1>
-
                 <label className="block mb-2">
                   <span className="text-gray-700 dark:text-gray-400">
                     Correo electrónico:
-                  </span></label>
-                  <input id="email" name="email"
-                    className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                    placeholder="0000000@mail.edu.sv" value={formulario.email}
-                    onChange={ManejarEventoDeInputs}
-                  /> {alerta
-                    .filter(
-                      (input) =>
-                        input.valorInput === "email" &&
-                        input.estado === true
-                    )
-                    .map((message) => (
-                      <div className="py-2">
-                        <span className="text-red-500 mt-2">
-                          {message.mensaje}
-                        </span>
-                      </div>
-                    ))}
-
+                  </span>
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="0000000@mail.edu.sv"
+                  value={formulario.email}
+                  onChange={ManejarEventoDeInputs}
+                />{" "}
+                {alerta
+                  .filter(
+                    (input) =>
+                      input.valorInput === "email" && input.estado === true
+                  )
+                  .map((message) => (
+                    <div className="py-2">
+                      <span className="text-red-500 mt-2">
+                        {message.mensaje}
+                      </span>
+                    </div>
+                  ))}
                 <label className="block mb-2">
                   <span className="text-gray-700 dark:text-gray-400">
                     Contraseña:
-                  </span></label>
-                  <input id="password" name="password"
-                    className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
-                    placeholder="**********"
-                    type="password" value={formulario.password}
-                    onChange={ManejarEventoDeInputs}
-                  />{alerta
-                    .filter(
-                      (input) =>
-                        input.valorInput === "password" &&
-                        input.estado === true
-                    )
-                    .map((message) => (
-                      <div className="py-2">
-                        <span className="text-red-500 mt-2">
-                          {message.mensaje}
-                        </span>
-                      </div>
-                    ))}
-
-                <button
-                  className="block w-full px-4 py-2 mt-4 text-sm font-font2 leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg- hover:bg-blue-800 focus:outline-none focus:shadow-outline-"
-                >
+                  </span>
+                </label>
+                <input
+                  id="password"
+                  name="password"
+                  className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  placeholder="**********"
+                  type="password"
+                  value={formulario.password}
+                  onChange={ManejarEventoDeInputs}
+                />
+                {alerta
+                  .filter(
+                    (input) =>
+                      input.valorInput === "password" && input.estado === true
+                  )
+                  .map((message) => (
+                    <div className="py-2">
+                      <span className="text-red-500 mt-2">
+                        {message.mensaje}
+                      </span>
+                    </div>
+                  ))}
+                <button className="block w-full px-4 py-2 mt-4 text-sm font-font2 leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg- hover:bg-blue-800 focus:outline-none focus:shadow-outline-">
                   Inicia Sesión
                 </button>
-
                 <p className="mt-4">
                   <Link
                     className="block mb-2 hover:underline"
@@ -281,7 +286,6 @@ const InicioSesion = () => {
                     Olvidaste tu contraseña?
                   </Link>
                 </p>
-
                 <p className="mt-1">
                   <Link className="block mb-2 hover:underline" to={"/Registro"}>
                     Regístrate
