@@ -71,7 +71,7 @@ const InicioSesion = () => {
 
     //!Validacion para enviar los datos al servidor
     if (totalValidaciones.length >= 2) {
-      console.log("Enviar al servidor"); 
+      console.log("Enviar al servidor");
 
       //ALERT TO NAVIGATE
       const Toast = Swal.mixin({
