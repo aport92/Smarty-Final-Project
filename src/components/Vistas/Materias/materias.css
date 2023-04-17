@@ -15,7 +15,6 @@ display: flex;
 transition: .9s;
 margin: 15%;
 padding: 1px;
-background: red;
 }
 .materias .container .col{
 position: relative;
