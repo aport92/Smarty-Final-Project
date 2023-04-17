@@ -40,10 +40,7 @@ body {
     overflow-x: hidden;
 }
 
-.container {
-    position: relative;
-    width: 100%;
-}
+
 
 .navegacion {
     position: fixed;

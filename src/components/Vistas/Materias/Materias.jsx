@@ -2,7 +2,7 @@ import { React } from "react";
 import { Navbar } from "../Navbar";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import "../Materias/materias.css";
+import "./materias2.css";
 import Math from "../Materias/Mathematics.gif";
 import Science from "../Materias/Biologist.gif";
 import Language from "../Materias/Bibliophile.gif";
@@ -11,7 +11,7 @@ const Materias = () => {
   return (
     <>
       <Navbar />
-      <div className="materias container">
+      <div className="materia1 container1">
         <div className="col">
           <span className="active">
             <div className="box">

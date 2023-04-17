@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import "./components/Vistas/Materias/materias2.css";
 import reportWebVitals from "./reportWebVitals";
 import Router from "./components/ROUTER/Router";
 

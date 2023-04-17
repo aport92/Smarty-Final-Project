@@ -3,18 +3,19 @@
     src: local('Insanibc'), url(/src/components/fonts/Insanibc.ttf) format('truetype');
 }
 
-.materias body{
+.materias > body{
 background: #fff;
 padding: 0;
 margin: 0;
 font-family: 'Insanibc';
 }
-.materias .container{
+.materias{
 width: 95%;    height: 600px;
 display: flex;
 transition: .9s;
 margin: 15%;
 padding: 1px;
+background: red;
 }
 .materias .container .col{
 position: relative;
