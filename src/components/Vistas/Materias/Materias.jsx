@@ -12,13 +12,12 @@ const Materias = () => {
     <>
       <Navbar />
       <div className="materias container">
-        
         <div className="col">
           <span className="active">
             <div className="box">
               <i className="fa fa-gift" aria-hidden="true"></i>
               <h2>Matemáticas</h2>
-              <Link to={"#"}>Vamos allá</Link>
+              <Link to={"/Quizz1"}>Vamos allá</Link>
             </div>
           </span>
           <span>
@@ -33,7 +32,7 @@ const Materias = () => {
             <div className="box">
               <i className="fa fa-graduation-cap" aria-hidden="true"></i>
               <h2>Lenguaje y Literatura</h2>
-              <Link to={"#"}>Vamos allá</Link>
+              <Link to={"/Quizz2"}>Vamos allá</Link>
             </div>
           </span>
         </div>
@@ -42,7 +41,7 @@ const Materias = () => {
             <div className="box">
               <i className="fa fa-globe" aria-hidden="true"></i>
               <h2>Ciencias Naturales</h2>
-              <Link to={"#"}>Vamos allá</Link>
+              <Link to={"Quizz3"}>Vamos allá</Link>
             </div>
           </span>
           <span>
