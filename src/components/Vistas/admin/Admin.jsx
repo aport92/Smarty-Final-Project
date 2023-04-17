@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../admin/admin.css";
+import Smartyw3 from "../admin/smarty-w3.svg";
 
 const Admin = () => {
   //MenuToggle
@@ -31,7 +32,7 @@ const Admin = () => {
         <div className="navegacion">
           <br />
           <div className="logo">
-            <img src={"img/smarty-w3.svg"} />
+            <img src={Smartyw3} />
           </div>
 
           <ul>
