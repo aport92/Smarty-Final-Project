@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 
 const Admin = () => {
     return (
-        <>
-        <div className="container">
+
+<>
+    <div className="container">
         <div className="navegacion">
             <br>
             <div className="logo">
-                <img src="img/smarty-w3.svg">
-            </div>
-            <ul>
-                <li>
+                            <img src={"img/smarty-w3.svg"} />
+                        </div>
+
+                        <ul>
+                            <li>
                                 <Link to={"#"}>
                                     <span className="title"></span>
                                 </Link>
                 </li>
-
-
 
                 <li>
                                 <Link to={"#"}>
@@ -26,8 +26,6 @@ const Admin = () => {
                     </Link>
                 </li>
 
-
-
                 <li>
                                 <Link to={"#"}>
                         <span className="icon"><ion-icon name="book-sharp"></ion-icon></span>
@@ -35,25 +33,20 @@ const Admin = () => {
                     </Link>
                 </li>
 
-
-
                 <li>
                     <Link to={"#"}>
-                        <span className="icon"><ion-icon name="document-attach-sharp"></ion-icon></ion-icon></span>
+                        <span className="icon"><ion-icon name="document-attach-sharp"></ion-icon></ion-icon>
+                        </span>
                         <span className="title">Quizzes</span>
                     </Link>
                 </li>
 
-
-
                 <li>
-                    <Link href="#">
+                            <Link to={"#"}>
                         <span clasName="icon"><ion-icon name="business-sharp"></ion-icon></span>
                         <span className="title">Institución</span>
                     </Link>
                 </li>
-
-
 
                 <li>
                             <Link to={"#"}>
@@ -64,88 +57,68 @@ const Admin = () => {
             </ul>
         </div>
 
-
-
-
-
-
-
-
-        //*Aqui main*/
-        <div class="main">
-            <div class="topbar">
-                <div class="toggle">
+        {/*Aqui main*/}
+        <div className="main">
+            <div className="topbar">
+                <div className="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
 
-                <!--Icono lupa buscador-->
-                <div class="search">
+                {/*Icono lupa buscador*/}
+                <div className="search">
                     <label>
-                        <input type="text" placerholder="Search Here">
-                        <ion-icon name="search-outline">Search Here</ion-icon>
+                        <input type="text" placerholder="Buscar">
+                        <ion-icon name="search-outline">Buscar</ion-icon>
                     </label>
                 </div>
-                <!--Usuario img-->
-                <div class="user">
-                    <img src="img/usuario.jpg">
+
+                {/*Usuario img*/}
+                <div className="user">
+                            <img src={"img/usuario.jpg"} />
                 </div>
             </div>
 
-            <!--tarjetas-->
-            <div class="cardBox">
-                <div class="card">
+            {/*tarjetas*/}
+            <div className="cardBox">
+                <div className="card">
                     <div>
-                        <div class="numbers">Usuarios</div>
-                        <div class="iconBx"><ion-icon name="person-sharp"></ion-icon>
+                        <div className="numbers">Usuarios</div>
+                        <div className="iconBx"><ion-icon name="person-sharp"></ion-icon>
                         </div>
                     </div>
                 </div>
 
-                <div class="card">
+                <div className="card">
                     <div>
-                        <div class="numbers">Materias</div>
-                        <div class="iconBx"><ion-icon name="book-sharp"></ion-icon</ion-icon>
+                        <div className="numbers">Materias</div>
+                        <div className="iconBx"><ion-icon name="book-sharp"></ion-icon>
                         </div>
                     </div>
                 </div>
 
-                <div class="card">
+                <div className="card">
                     <div>
-                        <div class="numbers">Quizzes</div>
-                        <div class="iconBx"><ion-icon name="document-attach-sharp"></ion-icon>
+                        <div className="numbers">Quizzes</div>
+                        <div className="iconBx"><ion-icon name="document-attach-sharp"></ion-icon>
                         </div>
                     </div>
                 </div>
 
-                <div class="card">
+                <div className="card">
                     <div>
-                        <div class="numbers">Institución</div>
-                        <div class="iconBx">
+                        <div className="numbers">Institución</div>
+                        <div className="iconBx">
                             <ion-icon name="business-sharp"></ion-icon>
                         </div>
                     </div>
                 </div>
-
             </div>
-        
-          
 
-         
-            
-           </div>
-                   
-             
+</div>
 
-
-
-
-
-
-
-        
     </div>
     </div>
-
-    </>;)
+    </>
+    ;)
 };
 export default Admin;
