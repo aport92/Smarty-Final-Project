@@ -1,9 +1,10 @@
-import { React } from "react";
+import { React, useState } from "react";
 import { Navbar } from "../Navbar";
 import Footer from "../Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Aunthentication from "../InicioSesion/Authentication.gif";
 import "../InicioSesion/iniciosesion.css";
+import Swal from "sweetalert2";
 
 const InicioSesion = () => {
   const Navigate = useNavigate();
