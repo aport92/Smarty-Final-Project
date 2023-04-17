@@ -93,7 +93,7 @@ const InicioSesion = () => {
 
       //NAVIGATE ROUTE
       setTimeout(() => {
-        Navigate("/inicio");
+        Navigate("/PanelEstudiante");
       }, 2000);
     }
   };
