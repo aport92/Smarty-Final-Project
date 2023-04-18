@@ -82,7 +82,7 @@ const Registro = () => {
     console.log("Total de validaciones", totalValidaciones.length);
 
     //!Validacion para enviar los datos al servidor
-    if (totalValidaciones.length >= 2) {
+    if (totalValidaciones.length >= 6) {
       console.log("Enviar al servidor");
 
       //ALERT TO NAVIGATE
@@ -100,7 +100,7 @@ const Registro = () => {
 
       Toast.fire({
         icon: "success",
-        title: "Ingreso existoso",
+        title: "Ingreso de datos existoso",
       });
 
       //NAVIGATE ROUTE
