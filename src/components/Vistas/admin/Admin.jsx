@@ -147,6 +147,65 @@ const Admin = () => {
                 </div>
               </div>
             </div>
+
+            {/*Lista*/}
+            <div className="details">
+                <div className="recentOrders">
+                    <div className="carHeader">
+                        <h2>Usuarios</h2>
+                        <Link href="#" className="btn">Ver todo</Link>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Email</td>
+                                <td>Telefono</td>
+                                <td>NIE</td>
+                                <td>Puntos</td>
+                                <td>Grado</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan Fernando Pérez del Corral</td>
+                                <td>pedro1@gmail.com</td>
+                                <td>234567-6</td>
+                                <td>7659-4499</td>
+                                <td>100 puntos</td>
+                                <td>7°</td>
+
+                                <td><span class="status online">on-line</span></td>
+                            </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Juan Fernando Pérez del Corral</td>
+                                <td>pedro1@gmail.com</td>
+                                <td>234567-6</td>
+                                <td>7659-4499</td>
+                                <td>100 puntos</td>
+                                <td>7°</td>
+                                <td><span class="status online">on-line</span></td>
+                            </tr>
+
+                        <tbody>
+                            <tr>
+                                <td>Juan Fernando Pérez del Corral</td>
+                                <td>pedro1@gmail.com</td>
+                                <td>234567-6</td>
+                                <td>7659-4499</td>
+                                <td>100 puntos</td>
+                                <td>7°</td>
+                                <td><span class="status off-line">off-line</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </div>
+              
+
           </div>
         </div>
       </div>
