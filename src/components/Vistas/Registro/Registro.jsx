@@ -76,7 +76,7 @@ const Registro = () => {
     console.log("Total de validaciones", totalValidaciones.length);
 
     //Validacion para enviar los datos al servidor
-    if (totalValidaciones.length >= 6) {
+    if (totalValidaciones.length >= 7) {
       console.log("Enviar al servidor");
 
       //ALERT TO NAVIGATE
@@ -291,7 +291,7 @@ const Registro = () => {
                   </label>
                   <input
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
-                    type="text"
+                    type="password"
                     id="contraseña"
                     name="contraseña"
                     value={formulario.contraseñaReg}
