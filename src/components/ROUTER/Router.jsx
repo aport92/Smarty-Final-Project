@@ -11,7 +11,7 @@ import NotFound from "../Vistas/NotFound404/Notfound";
 import Materias from "../Vistas/Materias/Materias";
 
 //Vista Admin//
-import Admin from "../Vistas/Admin/Admin";
+import Dashboard from "../Vistas/Admin/dashboard/Dashboard";
 
 export default function () {
   return (
@@ -29,7 +29,7 @@ export default function () {
         <Route path="/Materias" element={<Materias />} />
 
         {/*Admin*/}
-        <Route path="/Admin" element={<Admin />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
   );
