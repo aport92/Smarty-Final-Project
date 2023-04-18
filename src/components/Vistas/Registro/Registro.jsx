@@ -13,6 +13,7 @@ const Registro = () => {
     nombreReg: "",
     apellidoReg: "",
     emailReg: "",
+    contraseñaReg: "",
     deptoReg: "",
     municipioReg: "",
     nieReg: "",
@@ -262,7 +263,7 @@ const Registro = () => {
                   />
                 </div>
 
-                {/*<!--mail-->*/}
+                {/*<!--mail/contraseña-->*/}
                 <div>
                   <label
                     className="block font-font2 text-[#1b69bf]"
@@ -278,6 +279,24 @@ const Registro = () => {
                     value={formulario.emailReg}
                     onChange={ManejarEventoDeInputs}
                     placeholder="Correo Electrónico"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    className="block font-font2 text-[#1b69bf]"
+                    for="contraseña"
+                  >
+                    Contraseña:
+                  </label>
+                  <input
+                    className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
+                    type="text"
+                    id="contraseña"
+                    name="contraseña"
+                    value={formulario.contraseñaReg}
+                    onChange={ManejarEventoDeInputs}
+                    placeholder="Contraseña"
                     required
                   />
                 </div>
