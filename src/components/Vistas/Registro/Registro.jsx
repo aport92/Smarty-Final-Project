@@ -55,6 +55,7 @@ const Registro = () => {
       { nombre: "nombre", value: formulario.nombreReg },
       { nombre: "apellido", value: formulario.apellidoReg },
       { nombre: "email", value: formulario.emailReg },
+      { nombre: "contraseña", value: formulario.contraseñaReg },
       { nombre: "departamento", value: formulario.deptoReg },
       { nombre: "municipio", value: formulario.municipioReg },
       { nombre: "departamento", value: formulario.nieReg },
@@ -76,7 +77,7 @@ const Registro = () => {
     console.log("Total de validaciones", totalValidaciones.length);
 
     //Validacion para enviar los datos al servidor
-    if (totalValidaciones.length >= 7) {
+    if (totalValidaciones.length >= 9) {
       console.log("Enviar al servidor");
 
       //ALERT TO NAVIGATE
@@ -291,7 +292,7 @@ const Registro = () => {
                   </label>
                   <input
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
-                    type="password"
+                    type="texto"
                     id="contraseña"
                     name="contraseña"
                     value={formulario.contraseñaReg}
