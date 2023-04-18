@@ -4,14 +4,14 @@ const Navb = () => {
   return (
     <div className="">
       <nav
-        className="relative flex w-full items-center justify-between bg-aFuerte3 py-2 shadow-md shadow-black/5 lg:flex-wrap lg:justify-start"
+        className="relative flex w-full items-center justify-between bg-[#328BD9] py-2 shadow-md shadow-black/5 lg:flex-wrap lg:justify-start"
         data-te-navbar-ref
       >
         <div className="flex w-full flex-wrap items-center justify-between pl-1 pr-6 ">
           <div className="flex items-center rounded px-6 py-4"></div>
           <div className="relative flex items-center">
             <div className="relative" data-te-dropdown-ref>
-              <a
+              <Link
                 className="hidden-arrow flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
                 to="#"
                 id="dropdownMenuButton2"
