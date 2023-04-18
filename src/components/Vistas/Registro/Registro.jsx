@@ -380,7 +380,7 @@ const Registro = () => {
                     Fecha de nacimiento:
                   </label>
                   <input
-                    className="block font-font2 text-[#1b69bf] placeholder-border"
+                    className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
                     type="date"
                     id="fecha-nacimiento"
                     name="fecha-nacimiento"
@@ -389,28 +389,30 @@ const Registro = () => {
                     required
                   ></input>
                 </div>
-
-                <label className="block text-[#1b69bf]" for="genero">
-                  Género:
-                </label>
-                <select
-                  className="placeholder-border rounded-lg px-3 py-2 w-full-full font-font3"
-                  id="genero"
-                  name="genero"
-                  required
-                >
-                  <option
-                    className="block text-[#1b69bf]"
-                    value=""
-                    disabled
-                    selected
+                <div>
+                  {" "}
+                  <label className="block text-[#1b69bf]" for="genero">
+                    Género:
+                  </label>
+                  <select
+                    className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
+                    id="genero"
+                    name="genero"
+                    required
                   >
-                    Género
-                  </option>
-                  <option value="mujer">Femenino</option>
-                  <option value="hombre">Masculino</option>
-                  <option value="hombre">Otro</option>
-                </select>
+                    <option
+                      className="block text-[#1b69bf]"
+                      value=""
+                      disabled
+                      selected
+                    >
+                      Género
+                    </option>
+                    <option value="mujer">Femenino</option>
+                    <option value="hombre">Masculino</option>
+                    <option value="hombre">Otro</option>
+                  </select>
+                </div>
               </div>
               <br />
               <button
