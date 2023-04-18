@@ -2,6 +2,7 @@ import { React } from "react";
 import { Navbar } from "../Navbar";
 import Footer from "../Footer";
 import Typing from "../Registro/Typing.gif";
+import 
 
 const Registro = () => {
   return (
@@ -40,7 +41,7 @@ const Registro = () => {
               {/*<!--apellido-->*/}
               <div>
                 <label
-                  className="block mb-2 font-font2 text-mainblue"
+                  className="block mb-2 font-font2 text-[#1b69bf]"
                   for="apellido"
                 >
                   Apellido:
@@ -57,7 +58,7 @@ const Registro = () => {
 
               {/*<!--mail-->*/}
               <div>
-                <label className="block font-font2 text-mainblue" for="email">
+                <label className="block font-font2 text-[#1b69bf]" for="email">
                   Correo electrónico:
                 </label>
                 <input
@@ -73,7 +74,7 @@ const Registro = () => {
               {/*<!--depto/municipio-->*/}
               <div>
                 <label
-                  className="block font-font2 text-mainblue"
+                  className="block font-font2 text-[#1b69bf]"
                   for="departamento"
                 >
                   Departamento:
@@ -87,7 +88,7 @@ const Registro = () => {
 
               <div>
                 <label
-                  className="block font-font2 text-mainblue"
+                  className="block font-font2 text-[#1b69bf]"
                   for="municipio"
                 >
                   Municipio:
@@ -102,7 +103,7 @@ const Registro = () => {
 
               {/*<!--nie/tel-->*/}
               <div>
-                <label class="block font-font2 text-mainblue" for="nie">
+                <label class="block font-font2 text-[#1b69bf]" for="nie">
                   Nie:
                 </label>
                 <input
@@ -116,14 +117,14 @@ const Registro = () => {
               </div>
 
               <div>
-                <label className="block font-font2 text-mainblue" for="phone">
+                <label className="block font-font2 text-[#1b69bf]" for="phone">
                   Teléfono:
                 </label>
                 <input
-                  className=" rounded-lg px-3 py-2 w-full"
+                  className="border-[#1b69bf] rounded-lg px-3 py-2 w-full"
                   id="phone"
                   type="text"
-                  placeholder="0000-000"
+                  placeholder="0000-0000"
                   for="telefono"
                 ></input>
               </div>
@@ -162,7 +163,7 @@ const Registro = () => {
             <br />
             <button
               id="submitButton"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 rounded-md mb-4"
+              className="bg-[#1b69bf] hover:bg-[#328BD9] text-white font-bold py-2 px-8 rounded-md mb-4"
             >
               Enviar
             </button>
