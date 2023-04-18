@@ -380,7 +380,7 @@ const Registro = () => {
                     Fecha de nacimiento:
                   </label>
                   <input
-                    className="placeholder-border rounded-lg px-3 py-2 w-full"
+                    className="block font-font2 text-[#1b69bf] placeholder-border"
                     type="date"
                     id="fecha-nacimiento"
                     name="fecha-nacimiento"
@@ -394,7 +394,7 @@ const Registro = () => {
                   Género:
                 </label>
                 <select
-                  className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
+                  className="placeholder-border rounded-lg px-3 py-2 w-full-full font-font3"
                   id="genero"
                   name="genero"
                   required
