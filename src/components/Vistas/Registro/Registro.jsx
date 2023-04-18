@@ -30,12 +30,6 @@ const Registro = () => {
   const isValidEmail =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  //!Estado inicial del formulario
-  const datosLogin = {
-    email: "",
-    password: "",
-  };
-
   //Estado para manejar los valores del formulario
   const [formulario, setFormulario] = useState(datosFormulario);
 
@@ -78,10 +72,9 @@ const Registro = () => {
       .map((estado) => {
         return false;
       });
-
     console.log("Total de validaciones", totalValidaciones.length);
 
-    //!Validacion para enviar los datos al servidor
+    //Validacion para enviar los datos al servidor
     if (totalValidaciones.length >= 6) {
       console.log("Enviar al servidor");
 
