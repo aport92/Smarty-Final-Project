@@ -56,6 +56,7 @@ const Registro = () => {
       { nombre: "apellido", value: formulario.apellidoReg },
       { nombre: "email", value: formulario.emailReg },
       { nombre: "contraseña", value: formulario.contraseñaReg },
+      { nombre: "repetirContraseña", value: formulario.repContraseñaReg },
       { nombre: "departamento", value: formulario.deptoReg },
       { nombre: "municipio", value: formulario.municipioReg },
       { nombre: "departamento", value: formulario.nieReg },
