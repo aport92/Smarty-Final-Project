@@ -27,7 +27,7 @@ const Aside = () => {
             !open && "opacity-0 translate-x-28 overflow-hidden"
           }`}
         >
-          <h1 className="">Learn +</h1>
+          <h1 className="">Smarty Plus</h1>
         </div>
         <div className="">
           <span>

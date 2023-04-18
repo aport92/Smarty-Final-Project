@@ -16,7 +16,7 @@ const LoginA = () => {
                 <input
                   type="text"
                   placeholder="Nombres"
-                  class="shadow appearance-none w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none p-3"
+                  class="shadow appearance-none w-full rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none p-3"
                 />
               </div>
               <div class="flex-auto">
@@ -24,12 +24,12 @@ const LoginA = () => {
                 <input
                   type="password"
                   placeholder="Contraseña"
-                  class="shadow appearance-none w-full rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none p-3"
+                  class="shadow appearance-none w-full rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none p-3"
                 />
               </div>
               <Link
                 to="/dashboard"
-                class="bg-aFuerte2 hover:bg-aFuerte3 rounded shadow-lg hover:shadow-xl transition duration-200 text-center"
+                class="bg-[] hover:bg-[#1b69bf] rounded shadow-lg hover:shadow-xl transition duration-200 text-center"
               >
                 <input
                   class=" text-white font-bold py-2 "
