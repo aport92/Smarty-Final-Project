@@ -26,7 +26,7 @@ export const Menu = () => {
           </span>
         </div>
       </Link>
-      <Link to="/alumno" className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      <Link to={"/alumno"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Alumnos</p>
@@ -36,7 +36,7 @@ export const Menu = () => {
           </span>
         </div>
       </Link>
-      <Link to="/grado" className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      <Link to={"/grado"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Grado</p>
@@ -46,7 +46,7 @@ export const Menu = () => {
           </span>
         </div>
       </Link>
-      <Link to="/materia" className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      <Link to={"/materia"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Materias</p>
@@ -56,7 +56,7 @@ export const Menu = () => {
           </span>
         </div>
       </Link>
-      <Link to="/unidad" className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      <Link to={"/unidad"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Unidades</p>
@@ -66,7 +66,7 @@ export const Menu = () => {
           </span>
         </div>
       </Link>
-      <Link to="/cuestionario" className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      <Link to={"/cuestionario"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Cuestionario</p>
@@ -76,7 +76,7 @@ export const Menu = () => {
           </span>
         </div>
       </Link>
-      <Link to="/preguntascto" className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      <Link to={"/preguntascto"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">
@@ -88,7 +88,7 @@ export const Menu = () => {
           </span>
         </div>
       </Link>
-      <Link to="/encuesta" className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      <Link to={"/encuesta"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Encuesta</p>
@@ -98,7 +98,7 @@ export const Menu = () => {
           </span>
         </div>
       </Link>
-      <Link to="/usuarios" className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      <Link to={"/usuarios"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Usuarios</p>
@@ -108,7 +108,7 @@ export const Menu = () => {
           </span>
         </div>
       </Link>
-      <Link to="/reporte" className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      <Link to={"/reporte"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
         <div className="h-full flex items-center border border-gray-200 p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Reportes</p>
