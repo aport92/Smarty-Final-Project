@@ -206,8 +206,8 @@ const InicioSesion = () => {
   return (
     <>
       <Navbar />
-      <div className="inicioSesion flex items-center min-h-screen p-6 bg-gray-50 dark:bg-gray-900">
-        <div className="flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl dark:bg-gray-800">
+      <div className="inicioSesion flex items-center min-h-screen p-6 bg-white">
+        <div className="flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl">
           <div className="flex flex-col overflow-y-auto md:flex-row">
             <div className="h-32 md:h-auto md:w-1/2">
               <img
@@ -221,18 +221,18 @@ const InicioSesion = () => {
               className="flex items-center justify-center p-6 sm:p-12 md:w-1/2"
             >
               <div className="w-full">
-                <h1 className="block mb-2 text-xl font-font1 text-blue-500">
+                <h1 className="block mb-2 text-xl font-font1 text-[#1b69bf]">
                   Inicio de Sesión
                 </h1>
                 <label className="block mb-2">
-                  <span className="text-gray-700 dark:text-gray-400">
+                  <span className="block font-font2 text-[#1b69bf]">
                     Correo electrónico:
                   </span>
                 </label>
                 <input
                   id="email"
                   name="email"
-                  className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  className="placeholder-border rounded-lg px-3 py-2 w-full text-[#1b69bf] form-input"
                   placeholder="0000000@mail.edu.sv"
                   value={formulario.email}
                   onChange={ManejarEventoDeInputs}
@@ -243,21 +243,21 @@ const InicioSesion = () => {
                       input.valorInput === "email" && input.estado === true
                   )
                   .map((message) => (
-                    <div className="py-2">
-                      <span className="text-red-500 mt-2">
+                    <div className="py-3">
+                      <span className="text-[#244673] mt-2">
                         {message.mensaje}
                       </span>
                     </div>
                   ))}
-                <label className="block mb-2">
-                  <span className="text-gray-700 dark:text-gray-400">
+                <label className="block mb-3">
+                  <span className="block font-font2 text-[#1b69bf]">
                     Contraseña:
                   </span>
                 </label>
                 <input
                   id="password"
                   name="password"
-                  className="block w-full mt-1 text-sm dark:border-gray-600 dark:bg-gray-700 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue dark:text-gray-300 dark:focus:shadow-outline-gray form-input"
+                  className="placeholder-border rounded-lg px-3 py-2 w-full text-[#1b69bf] form-input"
                   placeholder="**********"
                   type="password"
                   value={formulario.password}
@@ -270,12 +270,12 @@ const InicioSesion = () => {
                   )
                   .map((message) => (
                     <div className="py-2">
-                      <span className="text-red-500 mt-2">
+                      <span className="text-[#244673] mt-2">
                         {message.mensaje}
                       </span>
                     </div>
                   ))}
-                <button className="block w-full px-4 py-2 mt-4 text-sm font-font2 leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg- hover:bg-blue-800 focus:outline-none focus:shadow-outline-">
+                <button className="block w-full px-4 py-2 mt-4 text-sm font-font2 leading-5 text-center text-white transition-colors duration-150  bg-[#1b69bf] border border-transparent rounded-lg active:bg- hover:bg-[#328BD9] focus:outline-none focus:shadow-outline-">
                   Inicia Sesión
                 </button>
                 <p className="mt-4">

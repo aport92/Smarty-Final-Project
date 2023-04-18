@@ -1,0 +1,26 @@
+@font-face {
+    src: local('arial-narrow'), url(/src/components/fonts/arial-narrow.ttf) format('truetype');
+    src: local('Insanibc'), url(/src/components/fonts/Insanibc.ttf) format('truetype');
+}
+
+* {
+    font-family: 'insanibc';
+}
+::placeholder {
+    font-family: 'arial';
+}
+
+option {
+font-family: 'arial';
+}
+
+select{
+    font-family: 'arial';
+}
+input {
+        font-family: 'arial';
+    }
+
+.placeholder-border {
+    border: 1px solid #328bd9;
+}

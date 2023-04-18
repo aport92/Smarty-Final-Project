@@ -1,12 +1,11 @@
-import {React, useState} from 'react';
-import { Navbar } from '../Navbar';
-import Footer from '../Footer';
-import { Link, useNavigate } from 'react-router-dom';
-import ForgotPassword from '../forgot-password/Forgot-pass.gif'
-import Swal from 'sweetalert2';
+import { React, useState } from "react";
+import { Navbar } from "../Navbar";
+import Footer from "../Footer";
+import { Link, useNavigate } from "react-router-dom";
+import ForgotPassword from "../forgot-password/Forgot-pass.gif";
+import Swal from "sweetalert2";
 
 const ForgotPass = () => {
-
   const Navigate = useNavigate();
 
   //Valores validos para el correo
@@ -46,9 +45,7 @@ const ForgotPass = () => {
     e.preventDefault(); //Previene el comportamiento por defecto que trae consigo el evento
 
     //!Ordenamos los datos para enviarlos a la validación
-    let verificarInputs = [
-      { nombre: "email", value: formulario.email },
-    ];
+    let verificarInputs = [{ nombre: "email", value: formulario.email }];
 
     //Enviamos los datos a la funcion de validación y recibimos las validaciones
     const datosValidados = ValidarInputs(verificarInputs);
@@ -68,16 +65,16 @@ const ForgotPass = () => {
 
     //!Validacion para enviar los datos al servidor
     if (totalValidaciones.length >= 1) {
-      console.log("Enviar al servidor"); 
+      console.log("Enviar al servidor");
 
       //ALERT TO NAVIGATE
       Swal.fire({
-        position: 'center',
-        icon: 'info',
-        title: 'Revisa tu bandeja de entrada',
+        position: "center",
+        icon: "info",
+        title: "Revisa tu bandeja de entrada",
         showConfirmButton: false,
-        timer: 2000
-      })
+        timer: 2000,
+      });
 
       //NAVIGATE ROUTE
       setTimeout(() => {
@@ -121,7 +118,6 @@ const ForgotPass = () => {
 
           break;
         }
-
       }
     });
     //Retornamos el total de validaciones
@@ -132,42 +128,60 @@ const ForgotPass = () => {
 
   return (
     <>
-    <Navbar/>
-    <div className="flex items-center min-h-screen p-6 bg-gray-50 dark:bg-gray-900">
-      <div className="flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl dark:bg-gray-800">
-        <div className="flex flex-col overflow-y-auto md:flex-row">
-          <div className="h-32 md:h-auto md:w-1/2">
-          <img src={ForgotPassword} alt="" className="object-cover h-full w-full"/>
-          </div>
-      <form onSubmit={handleLoginSession} className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
-        <div className="w-full">
-          <h1 className="block mb-2 text-xl">Olvidé mi contraseña</h1>
-          <label className="block mb-2">
-            <span className="text-gray-700 dark:text-gray-400">Correo electrónico: </span></label>
-            <input id="email" name="email" className="block w-full mt-1 text-sm font-font3 dark:border-gray-600 dark:bg-gray-700 focus:border-blue-400 focus:outline-none focus:shadow-outline-blue dark:text-gray-300 dark:focus:shadow-outline-gray form-input" placeholder="0000000@mail.edu.sv" value={formulario.email}
-                    onChange={ManejarEventoDeInputs}/>{alerta
-                      .filter(
-                        (input) =>
-                          input.valorInput === "email" &&
-                          input.estado === true
-                      )
-                      .map((message) => (
-                        <div className="py-2">
-                          <span className="text-red-500 mt-2">
-                            {message.mensaje}
-                          </span>
-                        </div>
-                      ))}
+      <Navbar />
+      <div className="flex items-center min-h-screen p-6 bg-white dark:bg-gray-900">
+        <div className="flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl dark:bg-gray-800">
+          <div className="flex flex-col overflow-y-auto md:flex-row">
+            <div className="h-32 md:h-auto md:w-1/2">
+              <img
+                src={ForgotPassword}
+                alt=""
+                className="object-cover h-full w-full"
+              />
+            </div>
+            <form
+              onSubmit={handleLoginSession}
+              className="flex items-center justify-center p-6 sm:p-12 md:w-1/2"
+            >
+              <div className="w-full">
+                <h1 className="block mb-2 text-xl">Olvidé mi contraseña</h1>
+                <label className="block mb-2">
+                  <span className="block font-font2 text-[#1b69bf]">
+                    Correo electrónico:{" "}
+                  </span>
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  className="placeholder-border rounded-lg px-3 py-2 w-full text-[#1b69bf] form-input"
+                  placeholder="0000000@mail.edu.sv"
+                  value={formulario.email}
+                  onChange={ManejarEventoDeInputs}
+                />
+                {alerta
+                  .filter(
+                    (input) =>
+                      input.valorInput === "email" && input.estado === true
+                  )
+                  .map((message) => (
+                    <div className="py-2">
+                      <span className="text-[#244673] mt-2">
+                        {message.mensaje}
+                      </span>
+                    </div>
+                  ))}
 
-          <button className="block w-full px-4 py-2 mt-4 text-sm font-font2 leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg hover:bg-blue-800 focus:outline-none focus:shadow-outline-darkblue">Recuperar Contraseña</button>
+                <button className="block w-full px-4 py-2 mt-4 text-sm font-font2 leading-5 text-center text-white transition-colors duration-150  bg-[#1b69bf] border border-transparent rounded-lg active:bg hover:bg-[#328BD9] focus:outline-none focus:shadow-outline-darkblue">
+                  Recuperar Contraseña
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-</form>
-</div>
-</div>
-</div>
-<Footer/>
-</>
+      </div>
+      <Footer />
+    </>
   );
-}
+};
 
 export default ForgotPass;
