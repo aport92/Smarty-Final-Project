@@ -37,7 +37,7 @@ export const Menu = () => {
         </div>
       </Link>
       <Link to={"/grado"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+        <div className="h-full flex items-center border-[#1b69bf] border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Grado</p>
           </div>
@@ -47,7 +47,7 @@ export const Menu = () => {
         </div>
       </Link>
       <Link to={"/materia"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+        <div className="h-full flex items-center border-[#1b69bf]  border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Materias</p>
           </div>
@@ -57,7 +57,7 @@ export const Menu = () => {
         </div>
       </Link>
       <Link to={"/unidad"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+        <div className="h-full flex items-center border-[#1b69bf] border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Unidades</p>
           </div>
@@ -67,7 +67,7 @@ export const Menu = () => {
         </div>
       </Link>
       <Link to={"/cuestionario"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+        <div className="h-full flex items-center border-[#1b69bf] border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Cuestionario</p>
           </div>
