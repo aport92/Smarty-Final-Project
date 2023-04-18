@@ -1,11 +1,30 @@
-import { React } from "react";
+import { React, useState } from "react";
 import { Navbar } from "../Navbar";
 import Footer from "../Footer";
 import Typing from "../Registro/Typing.gif";
 import "../Registro/registro.css";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const Registro = () => {
   const Navigate = useNavigate();
+  //estado inicial del formulario
+  const datosFormulario = {
+    nombreReg: "",
+    apellidoReg: "",
+    emailReg: "",
+    deptoReg: "",
+    municipioReg: "",
+    nieReg: "",
+    telReg: "",
+  };
+
+  //estado inicial de la alerta (campos vacios)
+  const initialStateInput = {
+    valorInput: "",
+    mensaje: "",
+    estado: false,
+  };
 
   //Valores validos para el correo
   const isValidEmail =
@@ -17,15 +36,8 @@ const Registro = () => {
     password: "",
   };
 
-  //Estado inicial de la alerta
-  const initialStateInput = {
-    valorInput: "",
-    mensaje: "",
-    estado: false,
-  };
-
   //Estado para manejar los valores del formulario
-  const [formulario, setFormulario] = useState(datosLogin);
+  const [formulario, setFormulario] = useState(datosFormulario);
 
   //Estado para manejar las alertas de validación
   const [alerta, setAlerta] = useState([initialStateInput]);
@@ -35,19 +47,22 @@ const Registro = () => {
     //La propiedad target del event nos permitirá obtener los valores
     const name = event.target.name;
     const value = event.target.value;
-
     //Actualizamos los valores capturados a nuestro estado de formulario
     setFormulario({ ...formulario, [name]: value });
   };
 
   //Funcion que se va a encargar de validar los campos
-  const handleLoginSession = (e) => {
+  const handleRegistro = (e) => {
     e.preventDefault(); //Previene el comportamiento por defecto que trae consigo el evento
 
-    //!Ordenamos los datos para enviarlos a la validación
+    //Ordenamos los datos para enviarlos a la validación
     let verificarInputs = [
-      { nombre: "email", value: formulario.email },
-      { nombre: "password", value: formulario.password },
+      { nombre: "nombre", value: formulario.nombreReg },
+      { nombre: "apellido", value: formulario.apellidoReg },
+      { nombre: "email", value: formulario.emailReg },
+      { nombre: "departamento", value: formulario.deptoReg },
+      { nombre: "municipio", value: formulario.municipioReg },
+      { nombre: "departamento", value: formulario.nieReg },
     ];
 
     //Enviamos los datos a la funcion de validación y recibimos las validaciones
@@ -227,6 +242,8 @@ const Registro = () => {
                     type="text"
                     id="nombre"
                     name="nombre"
+                    value={formulario.nombreReg}
+                    onChange={ManejarEventoDeInputs}
                     placeholder="Nombre"
                     required
                   />
@@ -245,6 +262,8 @@ const Registro = () => {
                     type="text"
                     id="apellido"
                     name="apellido"
+                    value={formulario.apellidoReg}
+                    onChange={ManejarEventoDeInputs}
                     placeholder="apellido"
                     required
                   />
@@ -263,6 +282,8 @@ const Registro = () => {
                     type="text"
                     id="email"
                     name="email"
+                    value={formulario.emailReg}
+                    onChange={ManejarEventoDeInputs}
                     placeholder="Correo Electrónico"
                     required
                   />
@@ -280,6 +301,8 @@ const Registro = () => {
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3 text-[#1b69bf]"
                     id="departamento"
                     name="departamento"
+                    value={formulario.deptoReg}
+                    onChange={ManejarEventoDeInputs}
                   ></select>
                 </div>
 
@@ -294,6 +317,8 @@ const Registro = () => {
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3 text-[#1b69bf]"
                     id="municipio"
                     name="municipio"
+                    value={formulario.municipioReg}
+                    onChange={ManejarEventoDeInputs}
                     required
                   ></select>
                 </div>
@@ -307,7 +332,9 @@ const Registro = () => {
                     className="placeholder-border rounded-lg px-3 py-2 w-full text-[#1b69bf]"
                     type="text"
                     id="nie"
-                    name="email"
+                    name="nie"
+                    value={formulario.nieReg}
+                    onChange={ManejarEventoDeInputs}
                     placeholder="0000000"
                     required
                   />
@@ -324,6 +351,8 @@ const Registro = () => {
                     className="placeholder-border rounded-lg px-3 py-2 w-full"
                     id="phone"
                     type="text"
+                    value={formulario.telReg}
+                    onChange={ManejarEventoDeInputs}
                     placeholder="0000-0000"
                     for="telefono"
                   ></input>
@@ -342,6 +371,8 @@ const Registro = () => {
                     type="date"
                     id="fecha-nacimiento"
                     name="fecha-nacimiento"
+                    value={formulario.nacimientoReg}
+                    onChange={ManejarEventoDeInputs}
                     required
                   ></input>
                 </div>
