@@ -11,7 +11,7 @@ import NotFound from "../Vistas/NotFound404/Notfound";
 import Materias from "../Vistas/Materias/Materias";
 
 //Vista Admin//
-import Admin from "../Vistas/admin/Admin";
+import Admin from "../Vistas/Admin/Admin";
 
 export default function () {
   return (

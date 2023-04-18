@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../admin/admin.css";
-import Smartyw3 from "../admin/smarty-w3.svg";
+import "../Admin/admin.css";
+import Smartyw3 from "../Admin/smarty-w3.svg";
 
 const Admin = () => {
   //MenuToggle
