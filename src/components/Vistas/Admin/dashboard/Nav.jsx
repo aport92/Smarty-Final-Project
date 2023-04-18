@@ -4,7 +4,7 @@ const Navb = () => {
   return (
     <div className="">
       <nav
-        className="relative flex w-full items-center justify-between bg-[#328BD9] py-2 shadow-md shadow-black/5 lg:flex-wrap lg:justify-start"
+        className="relative flex w-full items-center justify-between bg-[#1b69bf] py-2 shadow-md shadow-black/5 lg:flex-wrap lg:justify-start"
         data-te-navbar-ref
       >
         <div className="flex w-full flex-wrap items-center justify-between pl-1 pr-6 ">

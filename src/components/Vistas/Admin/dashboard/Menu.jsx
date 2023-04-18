@@ -27,7 +27,7 @@ export const Menu = () => {
         </div>
       </Link>
       <Link to={"/alumno"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+        <div className="h-full flex items-center border-[#1b69bf] border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Alumnos</p>
           </div>
@@ -77,7 +77,7 @@ export const Menu = () => {
         </div>
       </Link>
       <Link to={"/preguntascto"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+        <div className="h-full flex items-center border-[#1b69bf] border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">
               Preguntas Cuestionario
@@ -89,7 +89,7 @@ export const Menu = () => {
         </div>
       </Link>
       <Link to={"/encuesta"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+        <div className="h-full flex items-center border-[#1b69bf] border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Encuesta</p>
           </div>
@@ -99,7 +99,7 @@ export const Menu = () => {
         </div>
       </Link>
       <Link to={"/usuarios"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+        <div className="h-full flex items-center border-[#1b69bf] border p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Usuarios</p>
           </div>
@@ -109,7 +109,7 @@ export const Menu = () => {
         </div>
       </Link>
       <Link to={"/reporte"} className="p-2 lg:w-1/3 md:w-1/2 w-full">
-        <div className="h-full flex items-center border border-gray-200 p-4 rounded-lg">
+        <div className="h-full flex items-center border border-[#1b69bf] p-4 rounded-lg">
           <div className="flex-grow text-center">
             <p className="text-gray-900 title-font font-medium">Reportes</p>
           </div>
