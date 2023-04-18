@@ -222,7 +222,7 @@ const Registro = () => {
           <form className="bg-white p-14 rounded-lg shadow-md">
             <div className="w-full mx-auto max-w-md">
               <h2 className="text-xl font-font1 text-[#1b69bf] mb-4 tracking-wide">
-                Iniciar sesión
+                Regíatrate
               </h2>
               <div className="grid grid-cols-2 gap-4 flex-col">
                 <div>
