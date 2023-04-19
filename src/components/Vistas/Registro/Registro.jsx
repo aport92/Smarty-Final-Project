@@ -13,10 +13,11 @@ const Registro = () => {
     nombreReg: "",
     apellidoReg: "",
     emailReg: "",
+    nieReg: "",
     contraseñaReg: "",
+    reContraseñaReg: "",
     deptoReg: "",
     municipioReg: "",
-    nieReg: "",
     telReg: "",
   };
 
@@ -43,7 +44,7 @@ const Registro = () => {
     const name = event.target.name;
     const value = event.target.value;
     //Actualizamos los valores capturados a nuestro estado de formulario
-    setFormulario({ ...formulario, [name]: value });
+    setFormulario({...formulario,[name]:value });
   };
 
   //Funcion que se va a encargar de validar los campos
@@ -55,11 +56,13 @@ const Registro = () => {
       { nombre: "nombre", value: formulario.nombreReg },
       { nombre: "apellido", value: formulario.apellidoReg },
       { nombre: "email", value: formulario.emailReg },
+      {nombre:  "nie", value: formulario.nieReg},
       { nombre: "contraseña", value: formulario.contraseñaReg },
-      { nombre: "repetirContraseña", value: formulario.repContraseñaReg },
+      { nombre: "repetirContraseña", value: formulario.reContraseñaReg },
       { nombre: "departamento", value: formulario.deptoReg },
       { nombre: "municipio", value: formulario.municipioReg },
-      { nombre: "departamento", value: formulario.nieReg },
+      { nombre: "telefono", value: formulario.telReg}
+     
     ];
 
     //Enviamos los datos a la funcion de validación y recibimos las validaciones
@@ -113,11 +116,43 @@ const Registro = () => {
     //Recibidos los datos a validar
     const datosDelFormulario = data;
 
-    //!Proceso de validacion
+    //Proceso de validacion
     // eslint-disable-next-line array-callback-return
     datosDelFormulario.map((valorInput) => {
       // eslint-disable-next-line default-case
       switch (valorInput.nombre) {
+        case 'nombre': {
+          if(valorInput.value === '' || valorInput.value === null){
+            errors.push({
+              valorInput:valorInput.nombre,
+              mensaje: 'Campo requerido',
+              estado: true
+            });
+          }else{
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: '',
+              estado:false
+            })
+          }
+          break;
+        }
+        case 'apellido': {
+          if(valorInput.value === '' || valorInput.value === null){
+            errors.push({
+              valorInput:valorInput.nombre,
+              mensaje: 'Campo requerido',
+              estado: true
+            });
+          }else{
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: '',
+              estado:false
+            })
+          }
+          break;
+        }
         case "email": {
           if (valorInput.value === "" || valorInput.value === null) {
             errors.push({
@@ -141,8 +176,85 @@ const Registro = () => {
 
           break;
         }
+        case 'nie': {
+          if(valorInput.value === '' || valorInput.value === null){
+            errors.push({
+              valorInput:valorInput.nombre,
+              mensaje: 'Campo requerido',
+              estado: true
+            });
+          }else{
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: '',
+              estado:false
+            })
+          }
+          break;
+        }
+        case "contraseña": {
+          if (valorInput.value === "" || valorInput.value === null) {
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: "Por favor ingresar tu contraseña",
+              estado: true,
+            });
+          } else if (valorInput.value.length < 8) {
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: "La contraseña debe tener al menos 8 caracteres",
+              estado: true,
+            });
+          } else {
+            var mayus = false;
+            var minus = false;
+            var num = false;
+            var caracter_raro = false;
 
-        case "password": {
+            for (var i = 0; i < valorInput.value.length; i++) {
+              if (
+                valorInput.value.charCodeAt(i) >= 65 &&
+                valorInput.value.charCodeAt(i) <= 90
+              ) {
+                mayus = true;
+              } else if (
+                valorInput.value.charCodeAt(i) >= 97 &&
+                valorInput.value.charCodeAt(i) <= 122
+              ) {
+                minus = true;
+              } else if (
+                valorInput.value.charCodeAt(i) >= 48 &&
+                valorInput.value.charCodeAt(i) <= 57
+              ) {
+                num = true;
+              } else {
+                caracter_raro = true;
+              }
+            }
+
+            if (
+              mayus === true &&
+              minus === true &&
+              num === true &&
+              caracter_raro === true
+            ) {
+              errors.push({
+                valorInput: valorInput.nombre,
+                mensaje: "",
+                estado: false,
+              });
+            } else {
+              errors.push({
+                valorInput: valorInput.nombre,
+                mensaje:
+                  "Ingresar una combinación correcta de almenos 8 caracteres",
+                estado: false,
+              });
+            }
+            break;
+          }
+        }
+        case "repetirContraseña": {
           if (valorInput.value === "" || valorInput.value === null) {
             errors.push({
               valorInput: valorInput.nombre,
@@ -220,7 +332,7 @@ const Registro = () => {
           <div className="ml-auto md:mr-4 mb-4 md:mb-0 rounded-md p-2">
             <img src={Typing} alt="Inicio Sesion" />
           </div>
-          <form className="bg-white p-14 rounded-lg shadow-md">
+          <form onSubmit={handleRegistro} className="bg-white p-14 rounded-lg shadow-md">
             <div className="w-full mx-auto max-w-md">
               <h2 className="text-xl font-font1 text-[#1b69bf] mb-4 tracking-wide">
                 Regístrate
@@ -237,12 +349,18 @@ const Registro = () => {
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
                     type="text"
                     id="nombre"
-                    name="nombre"
+                    name="nombreReg"
                     value={formulario.nombreReg}
                     onChange={ManejarEventoDeInputs}
                     placeholder="Nombre"
-                    required
                   />
+                   {
+                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
+                    <div className="">
+                      <span className="text-red-500 ">{message.mensaje}</span>
+                    </div>
+                  ))
+                }
                 </div>
 
                 {/*<!--apellido-->*/}
@@ -257,15 +375,21 @@ const Registro = () => {
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
                     type="text"
                     id="apellido"
-                    name="apellido"
+                    name="apellidoReg"
                     value={formulario.apellidoReg}
                     onChange={ManejarEventoDeInputs}
                     placeholder="apellido"
-                    required
                   />
+                  {
+                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
+                    <div className="">
+                      <span className="text-red-500 ">{message.mensaje}</span>
+                    </div>
+                  ))
+                }
                 </div>
 
-                {/*<!--mail/contraseña-->*/}
+                {/*<!--mail/correo-->*/}
                 <div>
                   <label
                     className="block font-font2 text-[#1b69bf]"
@@ -277,13 +401,42 @@ const Registro = () => {
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
                     type="text"
                     id="email"
-                    name="email"
+                    name="emailReg"
                     value={formulario.emailReg}
                     onChange={ManejarEventoDeInputs}
                     placeholder="Correo Electrónico"
-                    required
                   />
+                  {
+                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
+                    <div className="">
+                      <span className="text-red-500 ">{message.mensaje}</span>
+                    </div>
+                  ))
+                }
                 </div>
+                {/*<!--nie/tel-->*/}
+                <div>
+                  <label className="block font-font2 text-[#1b69bf]" for="nie">
+                    Nie:
+                  </label>
+                  <input
+                    className="placeholder-border rounded-lg px-3 py-2 w-full text-[#1b69bf]"
+                    type="text"
+                    id="nie"
+                    name="nieReg"
+                    value={formulario.nieReg}
+                    onChange={ManejarEventoDeInputs}
+                    placeholder="0000000"
+                  />
+                  {
+                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
+                    <div className="">
+                      <span className="text-red-500 ">{message.mensaje}</span>
+                    </div>
+                  ))
+                }
+                </div>
+                {/*<!-ontraseña-->*/}
                 <div>
                   <label
                     className="block font-font2 text-[#1b69bf]"
@@ -295,14 +448,44 @@ const Registro = () => {
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
                     type="texto"
                     id="contraseña"
-                    name="contraseña"
+                    name="contraseñaReg"
                     value={formulario.contraseñaReg}
                     onChange={ManejarEventoDeInputs}
-                    placeholder="Contraseña"
-                    required
+                    placeholder=" Contraseña"
                   />
+                  {
+                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
+                    <div className="">
+                      <span className="text-red-500 ">{message.mensaje}</span>
+                    </div>
+                  ))
+                }
                 </div>
-
+                {/*<!-Repetircontraseña-->*/}
+                <div>
+                  <label
+                    className="block font-font2 text-[#1b69bf]"
+                    for="reContraseña"
+                  >
+                    Repetir Contraseña:
+                  </label>
+                  <input
+                    className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
+                    type="texto"
+                    id="reContraseña"
+                    name="reContraseñaReg"
+                    value={formulario.reContraseñaReg}
+                    onChange={ManejarEventoDeInputs}
+                    placeholder="Repetir Contraseña"
+                  />
+                  {
+                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
+                    <div className="">
+                      <span className="text-red-500 ">{message.mensaje}</span>
+                    </div>
+                  ))
+                }
+                </div>
                 {/*<!--depto/municipio-->*/}
                 <div>
                   <label
@@ -314,12 +497,11 @@ const Registro = () => {
                   <select
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3 text-[#1b69bf]"
                     id="departamento"
-                    name="departamento"
+                    name="deptoReg"
                     value={formulario.deptoReg}
                     onChange={ManejarEventoDeInputs}
                   ></select>
                 </div>
-
                 <div>
                   <label
                     className="block font-font2 text-[#1b69bf]"
@@ -330,30 +512,12 @@ const Registro = () => {
                   <select
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3 text-[#1b69bf]"
                     id="municipio"
-                    name="municipio"
+                    name="municipioReg"
                     value={formulario.municipioReg}
                     onChange={ManejarEventoDeInputs}
-                    required
+                    
                   ></select>
                 </div>
-
-                {/*<!--nie/tel-->*/}
-                <div>
-                  <label className="block font-font2 text-[#1b69bf]" for="nie">
-                    Nie:
-                  </label>
-                  <input
-                    className="placeholder-border rounded-lg px-3 py-2 w-full text-[#1b69bf]"
-                    type="text"
-                    id="nie"
-                    name="nie"
-                    value={formulario.nieReg}
-                    onChange={ManejarEventoDeInputs}
-                    placeholder="0000000"
-                    required
-                  />
-                </div>
-
                 <div>
                   <label
                     className="block font-font2 text-[#1b69bf]"
@@ -365,13 +529,15 @@ const Registro = () => {
                     className="placeholder-border rounded-lg px-3 py-2 w-full"
                     id="phone"
                     type="text"
+                    name="telReg"
                     value={formulario.telReg}
                     onChange={ManejarEventoDeInputs}
                     placeholder="0000-0000"
                     for="telefono"
-                  ></input>
+                  >
+                    
+                  </input>
                 </div>
-
                 {/*<!--nac/gen-->*/}
                 <div>
                   <label
@@ -387,7 +553,6 @@ const Registro = () => {
                     name="fecha-nacimiento"
                     value={formulario.nacimientoReg}
                     onChange={ManejarEventoDeInputs}
-                    required
                   ></input>
                 </div>
                 <div>
@@ -399,7 +564,6 @@ const Registro = () => {
                     className="placeholder-border rounded-lg px-3 py-2 w-full font-font3"
                     id="genero"
                     name="genero"
-                    required
                   >
                     <option
                       className="block text-[#1b69bf]"
