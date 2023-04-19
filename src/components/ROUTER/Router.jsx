@@ -10,10 +10,14 @@ import NotFound from "../Vistas/NotFound404/Notfound";
 //Vista Estudiante//
 import Materias from "../Vistas/Materias/Materias";
 import TemarioMate from "../Vistas/Quizzes/math/TemarioMate";
+import TemarioLenguaje from "../Vistas/Quizzes/Lenguaje/TemarioLenguaje";
+import TemarioCiencias from "../Vistas/Quizzes/Ciencias/TemarioCiencias";
 
 //Vista Admin//
 import LoginAdmin from "../Vistas/Admin/LoginAdmin/LoginAdmin";
 import Dashboard from "../Vistas/Admin/dashboard/Dashboard";
+
+
 
 
 export default function () {
@@ -31,6 +35,10 @@ export default function () {
         {/*Estudiante*/}
         <Route path="/Materias" element={<Materias />} />
         <Route path="/TemarioMate" element={<TemarioMate />} />
+        <Route path="/TemarioLenguaje" element={<TemarioLenguaje />} />
+        <Route path="/TemarioCiencias" element={<TemarioCiencias />} />
+
+
         {/*Admin*/}
         <Route path="/LoginAdmin" element={<LoginAdmin />} />
         <Route path="/Dashboard" element={<Dashboard />} />
