@@ -11,44 +11,76 @@ const Materias = () => {
   return (
     <>
       <Navbar />
-      <div className="materia1 container1">
-        <div className="col">
-          <span className="active">
-            <div className="box">
-              <i className="fa fa-gift" aria-hidden="true"></i>
-              <h2>Matemáticas</h2>
-              <Link to={"/Quizz1"}>Vamos allá</Link>
+      <section className="text-gray-600 body-font">
+  <div className="container px-5 py-24 mx-auto">
+    <div className="flex flex-wrap -m-4">
+      <div className="p-4 md:w-1/3">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <img src={Math} />
+          <div className="p-6">
+            <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Asignatura</h2>
+            <h1 className="title-font text-lg font-medium text-[#1b62bf] mb-3">Matemáticas</h1>
+            <p className="leading-relaxed mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius accusantium, earum mollitia deleniti aliquam nulla magni impedit nam. Repudiandae tenetur laborum, facilis placeat doloremque nihil animi asperiores ab? Laborum, magni!</p>
+            <div className="flex items-center flex-wrap ">
+              <Link to={"/Quizz1"} className="text-[#328bd9] inline-flex items-center md:mb-2 lg:mb-0"> Inicia tu ruta
+                <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </Link>
+              
             </div>
-          </span>
-          <span>
-            <img src={Math} />
-          </span>
-        </div>
-        <div className="col">
-          <span>
-            <img src={Language} />
-          </span>
-          <span className="active">
-            <div className="box">
-              <i className="fa fa-graduation-cap" aria-hidden="true"></i>
-              <h2>Lenguaje y Literatura</h2>
-              <Link to={"/Quizz2"}>Vamos allá</Link>
-            </div>
-          </span>
-        </div>
-        <div className="col">
-          <span className="active">
-            <div className="box">
-              <i className="fa fa-globe" aria-hidden="true"></i>
-              <h2>Ciencias Naturales</h2>
-              <Link to={"Quizz3"}>Vamos allá</Link>
-            </div>
-          </span>
-          <span>
-            <img src={Science} />
-          </span>
+          </div>
         </div>
       </div>
+      <div className="p-4 md:w-1/3">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <img src={Language} />
+          <div className="p-6">
+            <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Asignatura</h2>
+            <h1 className="title-font text-lg font-medium text-[#1b62bf] mb-3">Lenguaje y Literatura</h1>
+            <p className="leading-relaxed mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quibusdam molestiae iure, voluptatum dolor quas quasi inventore consequatur doloribus excepturi consectetur eveniet necessitatibus explicabo assumenda quod? </p>
+            <div className="flex items-center flex-wrap">
+              <Link to={"/Quizz2"}className="text-[#328bd9] inline-flex items-center md:mb-2 lg:mb-0">Inicia tu ruta
+                <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="p-4 md:w-1/3">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+        <img src={Science} />
+          <div className="p-6">
+            <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Asignatura</h2>
+            <h1 className="title-font text-lg font-medium text-[#1b62bf] mb-3">Ciencias Naturales </h1>
+            <p className="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius accusantium, earum mollitia deleniti aliquam nulla magni impedit nam. Repudiandae tenetur laborum, facilis placeat doloremque nihil animi asperiores ab? Laborum, magni!</p>
+            <div className="flex items-center flex-wrap ">
+              <Link to={"/Quizz3"} className="text-[#328bd9] inline-flex items-center md:mb-2 lg:mb-0"> Inicia tu ruta
+              <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </Link>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+           
+       
+         
       <Footer />
     </>
   );
