@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
-const LoginA = () => {
+const LoginAdmin = () => {
   return (
     <>
       <body class="bg-aFuerte3 min-h-screen pt-12 md:pt-20 pb-6 px-2 md:px-0">
         <header class="max-w-lg mx-auto">
-          <h1 class="text-white text-4xl font-bold text-center">Aprende +</h1>
+          <h1 class="text-white text-4xl font-bold text-center">Smarty</h1>
           <h1 class="text-white text-center">Administración</h1>
         </header>
         <main class="bg-bCasi max-w-lg mx-auto p-8 md:p-12 my-10 rounded-3xl shadow-2xl">
@@ -121,4 +121,4 @@ const LoginA = () => {
     </>
   );
 };
-export default LoginA;
+export default LoginAdmin;
