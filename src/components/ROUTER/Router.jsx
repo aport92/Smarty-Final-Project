@@ -37,7 +37,7 @@ export default function () {
         <Route path="/TemarioMate" element={<TemarioMate />} />
         <Route path="/TemarioLenguaje" element={<TemarioLenguaje />} />
         <Route path="/TemarioCiencias" element={<TemarioCiencias />} />
-
+        <Route path="/QuizzFraciones" element={<QuizzFracciones/>} />
 
         {/*Admin*/}
         <Route path="/LoginAdmin" element={<LoginAdmin />} />
