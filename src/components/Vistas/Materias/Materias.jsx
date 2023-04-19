@@ -22,7 +22,7 @@ const Materias = () => {
             <h1 className="title-font text-lg font-medium text-[#1b62bf] mb-3">Matemáticas</h1>
             <p className="leading-relaxed mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius accusantium, earum mollitia deleniti aliquam nulla magni impedit nam. Repudiandae tenetur laborum, facilis placeat doloremque nihil animi asperiores ab? Laborum, magni!</p>
             <div className="flex items-center flex-wrap ">
-              <Link to={"/Quizz1"} className="text-[#328bd9] inline-flex items-center md:mb-2 lg:mb-0"> Inicia tu ruta
+              <Link to={"/TemarioMate"} className="text-[#328bd9] inline-flex items-center md:mb-2 lg:mb-0"> Inicia tu ruta
                 <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14"></path>
                   <path d="M12 5l7 7-7 7"></path>
