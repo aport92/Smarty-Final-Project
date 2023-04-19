@@ -44,7 +44,7 @@ const Registro = () => {
     const name = event.target.name;
     const value = event.target.value;
     //Actualizamos los valores capturados a nuestro estado de formulario
-    setFormulario({...formulario,[name]:value });
+    setFormulario({ ...formulario, [name]: value });
   };
 
   //Funcion que se va a encargar de validar los campos
@@ -56,13 +56,12 @@ const Registro = () => {
       { nombre: "nombre", value: formulario.nombreReg },
       { nombre: "apellido", value: formulario.apellidoReg },
       { nombre: "email", value: formulario.emailReg },
-      {nombre:  "nie", value: formulario.nieReg},
+      { nombre: "nie", value: formulario.nieReg },
       { nombre: "contraseña", value: formulario.contraseñaReg },
       { nombre: "repetirContraseña", value: formulario.reContraseñaReg },
       { nombre: "departamento", value: formulario.deptoReg },
       { nombre: "municipio", value: formulario.municipioReg },
-      { nombre: "telefono", value: formulario.telReg}
-     
+      { nombre: "telefono", value: formulario.telReg },
     ];
 
     //Enviamos los datos a la funcion de validación y recibimos las validaciones
@@ -121,35 +120,35 @@ const Registro = () => {
     datosDelFormulario.map((valorInput) => {
       // eslint-disable-next-line default-case
       switch (valorInput.nombre) {
-        case 'nombre': {
-          if(valorInput.value === '' || valorInput.value === null){
-            errors.push({
-              valorInput:valorInput.nombre,
-              mensaje: 'Campo requerido',
-              estado: true
-            });
-          }else{
+        case "nombre": {
+          if (valorInput.value === "" || valorInput.value === null) {
             errors.push({
               valorInput: valorInput.nombre,
-              mensaje: '',
-              estado:false
-            })
+              mensaje: "Campo requerido",
+              estado: true,
+            });
+          } else {
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: "",
+              estado: false,
+            });
           }
           break;
         }
-        case 'apellido': {
-          if(valorInput.value === '' || valorInput.value === null){
-            errors.push({
-              valorInput:valorInput.nombre,
-              mensaje: 'Campo requerido',
-              estado: true
-            });
-          }else{
+        case "apellido": {
+          if (valorInput.value === "" || valorInput.value === null) {
             errors.push({
               valorInput: valorInput.nombre,
-              mensaje: '',
-              estado:false
-            })
+              mensaje: "Campo requerido",
+              estado: true,
+            });
+          } else {
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: "",
+              estado: false,
+            });
           }
           break;
         }
@@ -176,19 +175,19 @@ const Registro = () => {
 
           break;
         }
-        case 'nie': {
-          if(valorInput.value === '' || valorInput.value === null){
-            errors.push({
-              valorInput:valorInput.nombre,
-              mensaje: 'Campo requerido',
-              estado: true
-            });
-          }else{
+        case "nie": {
+          if (valorInput.value === "" || valorInput.value === null) {
             errors.push({
               valorInput: valorInput.nombre,
-              mensaje: '',
-              estado:false
-            })
+              mensaje: "Campo requerido",
+              estado: true,
+            });
+          } else {
+            errors.push({
+              valorInput: valorInput.nombre,
+              mensaje: "",
+              estado: false,
+            });
           }
           break;
         }
@@ -332,7 +331,10 @@ const Registro = () => {
           <div className="ml-auto md:mr-4 mb-4 md:mb-0 rounded-md p-2">
             <img src={Typing} alt="Inicio Sesion" />
           </div>
-          <form onSubmit={handleRegistro} className="bg-white p-14 rounded-lg shadow-md">
+          <form
+            onSubmit={handleRegistro}
+            className="bg-white p-14 rounded-lg shadow-md"
+          >
             <div className="w-full mx-auto max-w-md">
               <h2 className="text-xl font-font1 text-[#1b69bf] mb-4 tracking-wide">
                 Regístrate
@@ -354,13 +356,16 @@ const Registro = () => {
                     onChange={ManejarEventoDeInputs}
                     placeholder="Nombre"
                   />
-                   {
-                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
-                    <div className="">
-                      <span className="text-red-500 ">{message.mensaje}</span>
-                    </div>
-                  ))
-                }
+                  {alerta
+                    .filter(
+                      (input) =>
+                        input.valorInput == "nombre" && input.estado === true
+                    )
+                    .map((message) => (
+                      <div className="">
+                        <span className="text-red-500 ">{message.mensaje}</span>
+                      </div>
+                    ))}
                 </div>
 
                 {/*<!--apellido-->*/}
@@ -380,13 +385,16 @@ const Registro = () => {
                     onChange={ManejarEventoDeInputs}
                     placeholder="apellido"
                   />
-                  {
-                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
-                    <div className="">
-                      <span className="text-red-500 ">{message.mensaje}</span>
-                    </div>
-                  ))
-                }
+                  {alerta
+                    .filter(
+                      (input) =>
+                        input.valorInput == "nombre" && input.estado === true
+                    )
+                    .map((message) => (
+                      <div className="">
+                        <span className="text-red-500 ">{message.mensaje}</span>
+                      </div>
+                    ))}
                 </div>
 
                 {/*<!--mail/correo-->*/}
@@ -406,13 +414,16 @@ const Registro = () => {
                     onChange={ManejarEventoDeInputs}
                     placeholder="Correo Electrónico"
                   />
-                  {
-                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
-                    <div className="">
-                      <span className="text-red-500 ">{message.mensaje}</span>
-                    </div>
-                  ))
-                }
+                  {alerta
+                    .filter(
+                      (input) =>
+                        input.valorInput == "nombre" && input.estado === true
+                    )
+                    .map((message) => (
+                      <div className="">
+                        <span className="text-red-500 ">{message.mensaje}</span>
+                      </div>
+                    ))}
                 </div>
                 {/*<!--nie/tel-->*/}
                 <div>
@@ -428,13 +439,16 @@ const Registro = () => {
                     onChange={ManejarEventoDeInputs}
                     placeholder="0000000"
                   />
-                  {
-                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
-                    <div className="">
-                      <span className="text-red-500 ">{message.mensaje}</span>
-                    </div>
-                  ))
-                }
+                  {alerta
+                    .filter(
+                      (input) =>
+                        input.valorInput == "nombre" && input.estado === true
+                    )
+                    .map((message) => (
+                      <div className="">
+                        <span className="text-red-500 ">{message.mensaje}</span>
+                      </div>
+                    ))}
                 </div>
                 {/*<!-ontraseña-->*/}
                 <div>
@@ -453,13 +467,16 @@ const Registro = () => {
                     onChange={ManejarEventoDeInputs}
                     placeholder=" Contraseña"
                   />
-                  {
-                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
-                    <div className="">
-                      <span className="text-red-500 ">{message.mensaje}</span>
-                    </div>
-                  ))
-                }
+                  {alerta
+                    .filter(
+                      (input) =>
+                        input.valorInput == "nombre" && input.estado === true
+                    )
+                    .map((message) => (
+                      <div className="">
+                        <span className="text-red-500 ">{message.mensaje}</span>
+                      </div>
+                    ))}
                 </div>
                 {/*<!-Repetircontraseña-->*/}
                 <div>
@@ -478,13 +495,16 @@ const Registro = () => {
                     onChange={ManejarEventoDeInputs}
                     placeholder="Repetir Contraseña"
                   />
-                  {
-                  alerta.filter(input => input.valorInput == "nombre" && input.estado === true).map(message => (
-                    <div className="">
-                      <span className="text-red-500 ">{message.mensaje}</span>
-                    </div>
-                  ))
-                }
+                  {alerta
+                    .filter(
+                      (input) =>
+                        input.valorInput == "nombre" && input.estado === true
+                    )
+                    .map((message) => (
+                      <div className="">
+                        <span className="text-red-500 ">{message.mensaje}</span>
+                      </div>
+                    ))}
                 </div>
                 {/*<!--depto/municipio-->*/}
                 <div>
@@ -515,7 +535,6 @@ const Registro = () => {
                     name="municipioReg"
                     value={formulario.municipioReg}
                     onChange={ManejarEventoDeInputs}
-                    
                   ></select>
                 </div>
                 <div>
@@ -534,9 +553,7 @@ const Registro = () => {
                     onChange={ManejarEventoDeInputs}
                     placeholder="0000-0000"
                     for="telefono"
-                  >
-                    
-                  </input>
+                  ></input>
                 </div>
                 {/*<!--nac/gen-->*/}
                 <div>

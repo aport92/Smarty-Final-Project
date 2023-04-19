@@ -291,7 +291,7 @@ const InicioSesion = () => {
                     Regístrate
                   </Link>
                 </p>
-                <p className="mt-1">
+                <p className="mt-2">
                   <Link
                     className="block mb-2 hover:underline"
                     to={"/LoginAdmin"}
