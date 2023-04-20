@@ -1,7 +1,7 @@
 import React from "react";
-
+import { useState } from "react";
 const QuizzFraciones = () => {
-  let questions = [
+  const [questions, setQuestions] = useState([
     {
       numb: 1,
       question: "?",
@@ -32,7 +32,7 @@ const QuizzFraciones = () => {
       answer: "",
       options: ["", "", "", ""],
     },
-  ];
+  ]);
 
   return (
     <div>
