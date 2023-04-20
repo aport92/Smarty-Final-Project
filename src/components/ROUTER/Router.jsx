@@ -14,7 +14,8 @@ import TemarioLenguaje from "../Vistas/Temarios/Lenguaje/TemarioLenguaje";
 import TemarioCiencias from "../Vistas/Temarios/Ciencias/TemarioCiencias";
 import QuizzFraciones from "../Vistas/Quizzes/Quizzesmate/QuizzFraciones";
 import Quizzciencias from "../Vistas/Quizzes/Quizzesciencias/quizzciencias";
-import Quiz
+import Quizzlenguaje from "../Vistas/Quizzes/QuizzesLenguaje/QuizzLiteratura";
+
 
 //Vista Admin//
 import LoginAdmin from "../Vistas/Admin/LoginAdmin/LoginAdmin";
