@@ -47,7 +47,6 @@ const Quizzlenguaje = () => {
       options: ["Cuento", "Ensayo", "Rima", "Historia"],
     },
   ]);
-
   return (
     <div>
       <div className="start_btn">
