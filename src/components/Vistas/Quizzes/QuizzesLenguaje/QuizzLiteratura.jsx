@@ -4,51 +4,49 @@ const Quizzlenguaje = () => {
   const [questions, setQuestions] = useState([
     {
       numb: 1,
-      question: "Al proceso intelectual que sirve para leer como para escribir se lo conoce como:",
+      question:
+        "Al proceso intelectual que sirve para leer como para escribir se lo conoce como:",
       answer: "Análisis narrativo",
-      options: ["Análisis narrativo", 
-                "Análisis escrito",
-                "Análisis complejo",
-                 "Análisis FODA"],
+      options: [
+        "Análisis narrativo",
+        "Análisis escrito",
+        "Análisis complejo",
+        "Análisis FODA",
+      ],
     },
     {
       numb: 2,
-      question: "La secuencia que va desde el inicio hasta el final es denominada:",
+      question:
+        "La secuencia que va desde el inicio hasta el final es denominada:",
       answer: " Secuencia lineal ",
-      options: ["Secuencia normal", 
-                "Secuencia lineal ", 
-                "Secuencia yuxtapuesta", 
-                "Secuencia consecutiva"],
+      options: [
+        "Secuencia normal",
+        "Secuencia lineal ",
+        "Secuencia yuxtapuesta",
+        "Secuencia consecutiva",
+      ],
     },
     {
       numb: 3,
-      question: " La secuencia cuyos hechos van desde el fin hasta el inicio es denominada",
+      question:
+        " La secuencia cuyos hechos van desde el fin hasta el inicio es denominada",
       answer: "Retrospección",
-      options: ["Retrospección", 
-                "Narrativa", 
-                "Zigzag", 
-                "Circulo vicioso"],
+      options: ["Retrospección", "Narrativa", "Zigzag", "Circulo vicioso"],
     },
     {
       numb: 4,
       question: "El que escribe su historia se lo conoce como:",
       answer: "Narrador",
-      options: ["Escritor", 
-                "Historiador",
-                 "Narrador",
-                  "Chismoso"],
+      options: ["Escritor", "Historiador", "Narrador", "Chismoso"],
     },
     {
       numb: 5,
-      question: "Al escrito en el que el autor plasma sus opiniones personales se lo llama:",
+      question:
+        "Al escrito en el que el autor plasma sus opiniones personales se lo llama:",
       answer: "Ensayo",
-      options: ["Cuento", 
-                "Ensayo", 
-                "Rima", 
-                "Historia"],
+      options: ["Cuento", "Ensayo", "Rima", "Historia"],
     },
   ]);
-
   return (
     <div>
       <div className="start_btn">
