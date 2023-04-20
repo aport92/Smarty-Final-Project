@@ -1,37 +1,62 @@
 import React from "react";
 import { useState } from "react";
-const QuizzFraciones = () => {
+const Quizzciencias = () =>{
   const [questions, setQuestions] = useState([
     {
-      numb: 1,
-      question: "",
-      answer: "",
-      options: ["", "", "", ""],
-    },
-    {
-      numb: 2,
-      question: "?",
-      answer: "",
-      options: ["", "", "", ""],
-    },
-    {
-      numb: 3,
-      question: "?",
-      answer: "",
-      options: ["", "", "", ""],
-    },
-    {
-      numb: 4,
-      question: "?",
-      answer: "",
-      options: ["", "", "", ""],
-    },
-    {
-      numb: 5,
-      question: "?",
-      answer: "",
-      options: ["", "", "", ""],
-    },
+        numb: 1,
+        question: "¿Cuál es el órgano de la planta que tiene como función la reproducción?",
+        answer: "Flor",
+       options: [
+          "Fruto.",
+          "Tallo",
+          "Flor",
+          "Raíz"
+        ]
+      },
+        {
+        numb: 2,
+        question: "¿Cuál de las siguientes funciones son realizadas por el sentido del tacto?",
+        answer: "Distinguir diferentes temperaturas y texturas",
+        options: [
+          "Obtención de sensaciones a través del paladar",
+          "Captación de formas y colores de los objetos",
+          "Distinguir diferentes temperaturas y texturas",
+          "Captación de los sonidos del ambiente"
+        ]
+      },
+        {
+        numb: 3,
+        question: " ¿Qué hace la abeja para ayudar a que la flor se fecunde?",
+        answer: "Polinizar las flores",
+        options: [
+          "Polinizar las flores",
+          "Alimentarse del néctar",
+          "Producir la miel.",
+          "Transportar el néctar"
+        ]
+      },
+        {
+        numb: 4,
+        question: "Observa la imagen que presenta el ciclo del agua ¿Cuál es la función del Sol en este ciclo?",
+        answer: "Proveer la energía para que el agua cambie de estado y el ciclo se mantenga", 
+        options: [
+          " Hacer más alta la temperatura para impulsar la escorrentía de los ríos",
+          "Permitir que las plantas elaboren su alimento a través de la fotosíntesis",
+          "Generar vientos que transporten las nubes que llevan agua a la tierra",
+          "Proveer la energía para que el agua cambie de estado y el ciclo se mantenga"
+        ]
+      },
+        {
+        numb: 5,
+        question: "Observa y analiza el siguiente circuito en serie.¿Qué transformación de energía ocurre en el timbre?",
+        answer: "Sonora a eólica",
+        options: [
+          "Sonora a eólica",
+          "Eléctrica a sonora",
+          "Lumínica a sonora",
+          "Magnética a sonora"
+        ]
+      },
   ]);
 
   return (
@@ -103,4 +128,4 @@ const QuizzFraciones = () => {
   );
 };
 
-export default QuizzFraciones;
+export default Quizzciencias;
