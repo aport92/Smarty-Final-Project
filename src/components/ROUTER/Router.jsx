@@ -13,6 +13,8 @@ import TemarioMate from "../Vistas/Temarios/math/TemarioMate";
 import TemarioLenguaje from "../Vistas/Temarios/Lenguaje/TemarioLenguaje";
 import TemarioCiencias from "../Vistas/Temarios/Ciencias/TemarioCiencias";
 import QuizzFraciones from "../Vistas/Quizzes/Quizzesmate/QuizzFraciones";
+import Quizzciencias from "../Vistas/Quizzes/Quizzesciencias/quizzciencias";
+import Quiz
 
 //Vista Admin//
 import LoginAdmin from "../Vistas/Admin/LoginAdmin/LoginAdmin";
@@ -38,6 +40,8 @@ export default function () {
         <Route path="/TemarioLenguaje" element={<TemarioLenguaje />} />
         <Route path="/TemarioCiencias" element={<TemarioCiencias />} />
         <Route path="/QuizzFraciones" element={<QuizzFraciones />} />
+        <Route path="/Quizzciencias" element={<Quizzciencias/>}/>
+        
 
         {/*Admin*/}
         <Route path="/LoginAdmin" element={<LoginAdmin />} />
