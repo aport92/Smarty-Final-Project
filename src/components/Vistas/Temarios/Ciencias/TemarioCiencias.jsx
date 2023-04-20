@@ -63,6 +63,11 @@ const TemarioCiencias = () => {
               como los que presentan espinas, los estolones o los zarcillos.
               <br> </br>
             </p>
+            <br></br>
+            
+            <p>
+
+            </p>
 
             <div className="py-8 flex  flex-wrap md:flex-nowrap">
               <Link to={"/quizzciencias"} className="text-mainblue">
