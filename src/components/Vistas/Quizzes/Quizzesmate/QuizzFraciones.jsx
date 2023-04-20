@@ -70,7 +70,7 @@ const QuizzFraciones = () => {
 
       <div className="quiz_box">
         <header>
-          <div className="title"> Quiz - Ciencias </div>
+          <div className="title"> Quiz - Matemáticas </div>
           <div className="timer">
             <div className="time_left_txt">Tiempo</div>
             <div className="timer_sec">15</div>
