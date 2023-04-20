@@ -1,4 +1,7 @@
-
+@font-face {
+    src: local('arial-narrow'), url(/src/components/fonts/arial-narrow.ttf) format('truetype');
+    src: local('Insanibc'), url(/src/components/fonts/Insanibc.ttf) format('truetype');
+}
 *{
     margin: 0;
     padding: 0;
