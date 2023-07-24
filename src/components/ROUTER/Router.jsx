@@ -42,7 +42,7 @@ export default function () {
         <Route path="/TemarioCiencias" element={<TemarioCiencias />} />
         <Route path="/QuizzFraciones" element={<QuizzFraciones />} />
         <Route path="/Quizzciencias" element={<Quizzciencias/>}/>
-        <Route path="/QuizzLiteratura" element={<QuizzLiteratura/>}/>       
+        <Route path="/QuizzLiteratura" element={<QuizzLiteratura/>}/>
 
         {/*Admin*/}
         <Route path="/LoginAdmin" element={<LoginAdmin />} />
